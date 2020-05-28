@@ -1,0 +1,41 @@
+{
+  "f58e0cc31694da7aad4729e9eabc674" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "56fe93b1ee98ec3a",
+      "status" : "broken",
+      "statusDetails" : "Can't locate an element by this strategy: By.chained({By.xpath: //*[@class='android.widget.TextView'and @text='Top 80']})",
+      "time" : {
+        "start" : 1588662071502,
+        "stop" : 1588662081536,
+        "duration" : 10034
+      }
+    } ]
+  },
+  "788918b3875cb85cb86fe680ccbc9233" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 0,
+      "skipped" : 0,
+      "passed" : 1,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "d462ab74ce0c2974",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588662099702,
+        "stop" : 1588662107681,
+        "duration" : 7979
+      }
+    } ]
+  }
+}

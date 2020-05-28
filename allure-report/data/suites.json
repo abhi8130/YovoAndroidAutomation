@@ -1,0 +1,43 @@
+{
+  "uid" : "98d3104e051c652961429bf95fa0b5d6",
+  "name" : "suites",
+  "children" : [ {
+    "name" : "Yovo Automation Test Suite",
+    "children" : [ {
+      "name" : "Asus Device",
+      "children" : [ {
+        "name" : "com.automation.tests.HomePageTest",
+        "children" : [ {
+          "name" : "Verify Top50 Txt on homepage test",
+          "uid" : "56fe93b1ee98ec3a",
+          "parentUid" : "eb163c42ccb04af9ffbca6b5a8e573e4",
+          "status" : "broken",
+          "time" : {
+            "start" : 1588662071502,
+            "stop" : 1588662081536,
+            "duration" : 10034
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "Android", "http://0.0.0.0:4723/wd/hub" ]
+        }, {
+          "name" : "Swipe to next video test",
+          "uid" : "d462ab74ce0c2974",
+          "parentUid" : "eb163c42ccb04af9ffbca6b5a8e573e4",
+          "status" : "passed",
+          "time" : {
+            "start" : 1588662099702,
+            "stop" : 1588662107681,
+            "duration" : 7979
+          },
+          "flaky" : false,
+          "newFailed" : false,
+          "parameters" : [ "Android", "http://0.0.0.0:4723/wd/hub" ]
+        } ],
+        "uid" : "eb163c42ccb04af9ffbca6b5a8e573e4"
+      } ],
+      "uid" : "17cd411846cc9ee06df8803e5e8baeb3"
+    } ],
+    "uid" : "cf0097e985bff8525bd7fefd315d02b3"
+  } ]
+}

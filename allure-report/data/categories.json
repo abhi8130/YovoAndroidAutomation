@@ -1,0 +1,26 @@
+{
+  "uid" : "4b4757e66a1912dae1a509f688f20b0f",
+  "name" : "categories",
+  "children" : [ {
+    "name" : "Test defects",
+    "children" : [ {
+      "name" : "Can't locate an element by this strategy: By.chained({By.xpath: //*[@class='android.widget.TextView'and @text='Top 80']})",
+      "children" : [ {
+        "name" : "Verify Top50 Txt on homepage test",
+        "uid" : "56fe93b1ee98ec3a",
+        "parentUid" : "56aa1f711a187fbcf8dbd4ae8754b72c",
+        "status" : "broken",
+        "time" : {
+          "start" : 1588662071502,
+          "stop" : 1588662081536,
+          "duration" : 10034
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Android", "http://0.0.0.0:4723/wd/hub" ]
+      } ],
+      "uid" : "56aa1f711a187fbcf8dbd4ae8754b72c"
+    } ],
+    "uid" : "bdbf199525818fae7a8651db9eafe741"
+  } ]
+}

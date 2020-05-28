@@ -1,0 +1,5 @@
+2020-04-11 12:57:40,098  INFO [main] BaseClass:69 - Launching Appium Driver
+2020-04-11 12:57:40,103  WARN [main] BaseClass:70 - warning msg
+2020-04-11 12:57:40,103 ERROR [main] BaseClass:71 - error msg
+2020-04-11 12:57:40,103 DEBUG [main] BaseClass:72 - debug msg
+2020-04-11 12:57:40,104 FATAL [main] BaseClass:73 - fatal msg

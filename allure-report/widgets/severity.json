@@ -1,0 +1,21 @@
+[ {
+  "uid" : "56fe93b1ee98ec3a",
+  "name" : "Verify Top50 Txt on homepage test",
+  "time" : {
+    "start" : 1588662071502,
+    "stop" : 1588662081536,
+    "duration" : 10034
+  },
+  "status" : "broken",
+  "severity" : "normal"
+}, {
+  "uid" : "d462ab74ce0c2974",
+  "name" : "Swipe to next video test",
+  "time" : {
+    "start" : 1588662099702,
+    "stop" : 1588662107681,
+    "duration" : 7979
+  },
+  "status" : "passed",
+  "severity" : "normal"
+} ]

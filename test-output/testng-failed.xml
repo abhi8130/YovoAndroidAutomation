@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [Yovo Automation Test Suite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="com.automation.listeners.TestAllureListener"/>
+    <listener class-name="com.automation.listeners.TestNGlisteners"/>
+  </listeners>
+  <test parallel="tests" name="Asus MAX Pro M1 Device(failed)">
+    <parameter name="platformName" value="Android"/>
+    <parameter name="udid" value="J7AAGF009641EL4"/>
+    <parameter name="url" value="http://0.0.0.0:4723/wd/hub"/>
+    <classes>
+      <class name="com.automation.tests.HomePageTest">
+        <methods>
+          <include name="verifyeElementsOnHomePageTest"/>
+          <include name="setUpHomePageClass"/>
+          <include name="getResult"/>
+          <include name="quitDriver"/>
+        </methods>
+      </class> <!-- com.automation.tests.HomePageTest -->
+    </classes>
+  </test> <!-- Asus MAX Pro M1 Device(failed) -->
+</suite> <!-- Failed suite [Yovo Automation Test Suite] -->

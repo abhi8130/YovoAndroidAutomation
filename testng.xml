@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Yovo Automation Test Suite" parallel="tests"
+	thread-count="2" verbose="1">
+
+	<listeners>
+		<listener
+			class-name="com.automation.listeners.TestAllureListener" />
+		<listener
+			class-name="com.automation.listeners.TestNGlisteners" />
+	</listeners>
+
+	<test name="Asus MAX Pro M1 Device" preserve-order="true">
+		<!-- <parameter name="platformVersion" value="9.0" /> <parameter name="deviceName" 
+			value="ASUS_X00TD" /> -->
+		<parameter name="platformName" value="Android" />
+		<parameter name="udid" value="J7AAGF009641EL4" />
+		<parameter name="url" value="http://0.0.0.0:4723/wd/hub" />
+
+		<classes>
+			<class name="com.automation.tests.HomePageTest" />
+<!-- 			<class name="com.automation.tests.CreatePostPageTest" />
+ -->			<!-- <class name="com.automation.tests.UserProfilePageTest" /> -->
+		</classes>
+	</test>
+
+	<!-- <test name="Asus MAX Pro M2 Device" preserve-order="true"> <parameter 
+		name="platformVersion" value="9.0" /> <parameter name="deviceName" value="ASUS_X00TD" 
+		/> <parameter name="platformName" value="Android" /> <parameter name="udid" 
+		value="JCAAGF0497053XA" /> <parameter name="url" value="http://0.0.0.0:4724/wd/hub" 
+		/> <classes> <class name="com.automation.tests.HomePageTest" /> </classes> 
+		</test> -->
+</suite> <!-- Suite -->
