@@ -1,0 +1,139 @@
+{
+  "uid" : "d462ab74ce0c2974",
+  "name" : "Swipe to next video test",
+  "fullName" : "com.automation.tests.HomePageTest.swipeToNxtVideoTest",
+  "historyId" : "788918b3875cb85cb86fe680ccbc9233",
+  "time" : {
+    "start" : 1588662099702,
+    "stop" : 1588662107681,
+    "duration" : 7979
+  },
+  "description" : "TestCase Description: Swipe from one video to another",
+  "descriptionHtml" : "<p>TestCase Description: Swipe from one video to another</p>\n",
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setUpHomePageClass",
+    "time" : {
+      "start" : 1588662083578,
+      "stop" : 1588662099694,
+      "duration" : 16116
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "testStage" : {
+    "description" : "TestCase Description: Swipe from one video to another",
+    "status" : "passed",
+    "steps" : [ {
+      "name" : "Getting username from homepage",
+      "time" : {
+        "start" : 1588662105548,
+        "stop" : 1588662107339,
+        "duration" : 1791
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "hasContent" : false,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false
+    } ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 1,
+    "hasContent" : true,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ {
+    "name" : "tearDown",
+    "time" : {
+      "start" : 1588662107690,
+      "stop" : 1588662108422,
+      "duration" : 732
+    },
+    "description" : "",
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : false,
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false
+  } ],
+  "labels" : [ {
+    "name" : "package",
+    "value" : "com.automation.tests.HomePageTest"
+  }, {
+    "name" : "testClass",
+    "value" : "com.automation.tests.HomePageTest"
+  }, {
+    "name" : "testMethod",
+    "value" : "swipeToNxtVideoTest"
+  }, {
+    "name" : "parentSuite",
+    "value" : "Yovo Automation Test Suite"
+  }, {
+    "name" : "suite",
+    "value" : "Asus Device"
+  }, {
+    "name" : "subSuite",
+    "value" : "com.automation.tests.HomePageTest"
+  }, {
+    "name" : "host",
+    "value" : "abhi-PC"
+  }, {
+    "name" : "thread",
+    "value" : "4640@abhi-PC.main(1)"
+  }, {
+    "name" : "framework",
+    "value" : "testng"
+  }, {
+    "name" : "language",
+    "value" : "java"
+  }, {
+    "name" : "severity",
+    "value" : "normal"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ {
+    "name" : "platformName",
+    "value" : "Android"
+  }, {
+    "name" : "url",
+    "value" : "http://0.0.0.0:4723/wd/hub"
+  } ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ {
+      "uid" : "177f11c6a963b098",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588657891633,
+        "stop" : 1588657898706,
+        "duration" : 7073
+      }
+    } ],
+    "categories" : [ ],
+    "tags" : [ ]
+  },
+  "source" : "d462ab74ce0c2974.json",
+  "parameterValues" : [ "Android", "http://0.0.0.0:4723/wd/hub" ]
+}

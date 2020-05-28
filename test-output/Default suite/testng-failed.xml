@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
+  <test name="Default test(failed)">
+    <classes>
+<<<<<<< HEAD
+      <class name="com.automation.tests.LoginPageTest">
+        <methods>
+          <include name="loginUsingOtpTest"/>
+          <include name="getResult"/>
+          <include name="quitDriver"/>
+          <include name="setUpLoginPageClass"/>
+        </methods>
+      </class> <!-- com.automation.tests.LoginPageTest -->
+=======
+      <class name="com.automation.tests.HomePageTest">
+        <methods>
+          <include name="swipeToNxtVideoTest"/>
+          <include name="setUpHomePageClass"/>
+          <include name="tearDown"/>
+          <include name="verifyElementsOnHomeScreenTest"/>
+        </methods>
+      </class> <!-- com.automation.tests.HomePageTest -->
+>>>>>>> branch 'master' of https://github.com/abhi8130/AndroidAutomationProjects.git
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Default suite] -->

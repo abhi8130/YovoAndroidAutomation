@@ -1,0 +1,69 @@
+{
+  "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
+  "name" : "timeline",
+  "children" : [ {
+    "name" : "abhi-PC",
+    "children" : [ {
+      "name" : "3240@abhi-PC.main(1)",
+      "children" : [ {
+        "name" : "Swipe to next video test",
+        "uid" : "177f11c6a963b098",
+        "parentUid" : "16d490c507cc62159b995c2368f147a2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1588657891633,
+          "stop" : 1588657898706,
+          "duration" : 7073
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Android", "http://0.0.0.0:4723/wd/hub" ]
+      }, {
+        "name" : "Verify Top50 Txt on homepage test",
+        "uid" : "80103181cd7181a9",
+        "parentUid" : "16d490c507cc62159b995c2368f147a2",
+        "status" : "broken",
+        "time" : {
+          "start" : 1588657870243,
+          "stop" : 1588657880017,
+          "duration" : 9774
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Android", "http://0.0.0.0:4723/wd/hub" ]
+      } ],
+      "uid" : "16d490c507cc62159b995c2368f147a2"
+    }, {
+      "name" : "4640@abhi-PC.main(1)",
+      "children" : [ {
+        "name" : "Swipe to next video test",
+        "uid" : "d462ab74ce0c2974",
+        "parentUid" : "21a1a98812d4bb539bc7f8c9c8f6050b",
+        "status" : "passed",
+        "time" : {
+          "start" : 1588662099702,
+          "stop" : 1588662107681,
+          "duration" : 7979
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Android", "http://0.0.0.0:4723/wd/hub" ]
+      }, {
+        "name" : "Verify Top50 Txt on homepage test",
+        "uid" : "56fe93b1ee98ec3a",
+        "parentUid" : "21a1a98812d4bb539bc7f8c9c8f6050b",
+        "status" : "broken",
+        "time" : {
+          "start" : 1588662071502,
+          "stop" : 1588662081536,
+          "duration" : 10034
+        },
+        "flaky" : false,
+        "newFailed" : false,
+        "parameters" : [ "Android", "http://0.0.0.0:4723/wd/hub" ]
+      } ],
+      "uid" : "21a1a98812d4bb539bc7f8c9c8f6050b"
+    } ],
+    "uid" : "1cbce6cc3562443438e82513e6473423"
+  } ]
+}

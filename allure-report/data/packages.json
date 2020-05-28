@@ -1,0 +1,35 @@
+{
+  "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
+  "name" : "packages",
+  "children" : [ {
+    "name" : "com.automation.tests.HomePageTest",
+    "children" : [ {
+      "name" : "verifyUsernameOnHomePageTest",
+      "uid" : "56fe93b1ee98ec3a",
+      "parentUid" : "efe571dba97fcaacb1b0aa5189c02c45",
+      "status" : "broken",
+      "time" : {
+        "start" : 1588662071502,
+        "stop" : 1588662081536,
+        "duration" : 10034
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Android", "http://0.0.0.0:4723/wd/hub" ]
+    }, {
+      "name" : "swipeToNxtVideoTest",
+      "uid" : "d462ab74ce0c2974",
+      "parentUid" : "efe571dba97fcaacb1b0aa5189c02c45",
+      "status" : "passed",
+      "time" : {
+        "start" : 1588662099702,
+        "stop" : 1588662107681,
+        "duration" : 7979
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ "Android", "http://0.0.0.0:4723/wd/hub" ]
+    } ],
+    "uid" : "com.automation.tests.HomePageTest"
+  } ]
+}
