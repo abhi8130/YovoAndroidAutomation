@@ -18,7 +18,7 @@
 		<parameter name="url" value="http://0.0.0.0:4723/wd/hub" />
 
 		<classes>
-			<class name="com.automation.tests.HomePageTest" />
+			<class name="com.automation.tests.LoginPageTest" />
 <!-- 			<class name="com.automation.tests.CreatePostPageTest" />
  -->			<!-- <class name="com.automation.tests.UserProfilePageTest" /> -->
 		</classes>
