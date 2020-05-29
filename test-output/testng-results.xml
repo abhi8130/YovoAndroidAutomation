@@ -1,14 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<<<<<<< HEAD
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2020-05-28T16:56:11Z" name="Yovo Automation Test Suite" finished-at="2020-05-28T16:57:29Z" duration-ms="78146">
+  <suite started-at="2020-05-29T13:35:02Z" name="Yovo Automation Test Suite" finished-at="2020-05-29T13:35:45Z" duration-ms="43204">
     <groups>
     </groups>
-    <test started-at="2020-05-28T16:56:11Z" name="Asus MAX Pro M1 Device" finished-at="2020-05-28T16:57:29Z" duration-ms="78146">
+    <test started-at="2020-05-29T13:35:02Z" name="Asus MAX Pro M1 Device" finished-at="2020-05-29T13:35:45Z" duration-ms="43204">
       <class name="com.automation.tests.HomePageTest">
-        <test-method is-config="true" signature="setUpHomePageClass(java.lang.String, java.lang.String)[pri:0, instance:com.automation.tests.HomePageTest@701bc94e]" started-at="2020-05-28T22:26:11Z" name="setUpHomePageClass" finished-at="2020-05-28T22:27:14Z" duration-ms="63168" status="PASS">
+        <test-method is-config="true" signature="setUpHomePageClass(java.lang.String, java.lang.String)[pri:0, instance:com.automation.tests.HomePageTest@6642dc5a]" started-at="2020-05-29T19:05:02Z" name="setUpHomePageClass" finished-at="2020-05-29T19:05:32Z" duration-ms="29933" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -17,14 +16,14 @@
             </param>
             <param index="1">
               <value>
-                <![CDATA[https://device.pcloudy.com/appiumcloud/wd/hub]]>
+                <![CDATA[http://localhost:4723/wd/hub]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpHomePageClass -->
-        <test-method signature="verifyeElementsOnHomePageTest()[pri:1, instance:com.automation.tests.HomePageTest@701bc94e]" started-at="2020-05-28T22:27:14Z" name="verifyeElementsOnHomePageTest" description="Verify element i.e Top50 Txt on homepage test" finished-at="2020-05-28T22:27:18Z" duration-ms="3764" status="FAIL">
+        <test-method signature="verifyeElementsOnHomePageTest()[pri:1, instance:com.automation.tests.HomePageTest@6642dc5a]" started-at="2020-05-29T19:05:32Z" name="verifyeElementsOnHomePageTest" description="Verify element i.e Top50 Txt on homepage test" finished-at="2020-05-29T19:05:37Z" duration-ms="4995" status="FAIL">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //*[@class='android.widget.TextView'and @text='Top 80']})]]>
@@ -56,7 +55,7 @@
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
 	at java.base/java.lang.Thread.run(Thread.java:830)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@37c33ed1 (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@1a1bddd3 (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:315)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
@@ -88,140 +87,33 @@ Driver info: driver.version: AndroidDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- verifyeElementsOnHomePageTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.automation.tests.HomePageTest@701bc94e]" started-at="2020-05-28T22:27:20Z" name="getResult" finished-at="2020-05-28T22:27:25Z" duration-ms="4957" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.automation.tests.HomePageTest@6642dc5a]" started-at="2020-05-29T19:05:39Z" name="getResult" finished-at="2020-05-29T19:05:42Z" duration-ms="3069" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=verifyeElementsOnHomePageTest status=FAILURE method=HomePageTest.verifyeElementsOnHomePageTest()[pri:1, instance:com.automation.tests.HomePageTest@701bc94e] output={null}]]]>
+                <![CDATA[[TestResult name=verifyeElementsOnHomePageTest status=FAILURE method=HomePageTest.verifyeElementsOnHomePageTest()[pri:1, instance:com.automation.tests.HomePageTest@6642dc5a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method signature="swipeToNxtVideoTest()[pri:2, instance:com.automation.tests.HomePageTest@701bc94e]" started-at="2020-05-28T22:27:25Z" name="swipeToNxtVideoTest" description="Swipe to next video test" finished-at="2020-05-28T22:27:28Z" duration-ms="2983" status="PASS">
+        <test-method signature="swipeToNxtVideoTest()[pri:2, instance:com.automation.tests.HomePageTest@6642dc5a]" started-at="2020-05-29T19:05:42Z" name="swipeToNxtVideoTest" description="Swipe to next video test" finished-at="2020-05-29T19:05:44Z" duration-ms="2162" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- swipeToNxtVideoTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.automation.tests.HomePageTest@701bc94e]" started-at="2020-05-28T22:27:28Z" name="getResult" finished-at="2020-05-28T22:27:29Z" duration-ms="321" status="PASS">
+        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.automation.tests.HomePageTest@6642dc5a]" started-at="2020-05-29T19:05:45Z" name="getResult" finished-at="2020-05-29T19:05:45Z" duration-ms="227" status="PASS">
           <params>
             <param index="0">
               <value>
-                <![CDATA[[TestResult name=swipeToNxtVideoTest status=SUCCESS method=HomePageTest.swipeToNxtVideoTest()[pri:2, instance:com.automation.tests.HomePageTest@701bc94e] output={null}]]]>
+                <![CDATA[[TestResult name=swipeToNxtVideoTest status=SUCCESS method=HomePageTest.swipeToNxtVideoTest()[pri:2, instance:com.automation.tests.HomePageTest@6642dc5a] output={null}]]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.automation.tests.HomePageTest@701bc94e]" started-at="2020-05-28T22:27:29Z" name="quitDriver" finished-at="2020-05-28T22:27:29Z" duration-ms="396" status="PASS">
-=======
-<testng-results ignored="0" total="1" passed="0" failed="1" skipped="0">
-  <reporter-output>
-  </reporter-output>
-  <suite started-at="2020-05-28T14:22:17Z" name="Yovo Automation Test Suite" finished-at="2020-05-28T14:22:41Z" duration-ms="24200">
-    <groups>
-    </groups>
-    <test started-at="2020-05-28T14:22:17Z" name="Asus MAX Pro M1 Device" finished-at="2020-05-28T14:22:41Z" duration-ms="24200">
-      <class name="com.automation.tests.HomePageTest">
-        <test-method is-config="true" signature="setUpHomePageClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.tests.HomePageTest@4d0753c9]" started-at="2020-05-28T19:52:17Z" name="setUpHomePageClass" finished-at="2020-05-28T19:52:31Z" duration-ms="13289" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[Android]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[http://0.0.0.0:4723/wd/hub]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[J7AAGF009641EL4]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- setUpHomePageClass -->
-        <test-method signature="verifyeElementsOnHomePageTest()[pri:1, instance:com.automation.tests.HomePageTest@4d0753c9]" started-at="2020-05-28T19:52:31Z" name="verifyeElementsOnHomePageTest" description="Verify element i.e Top50 Txt on homepage test" finished-at="2020-05-28T19:52:34Z" duration-ms="3188" status="FAIL">
-          <exception class="org.openqa.selenium.NoSuchElementException">
-            <message>
-              <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //*[@class='android.widget.TextView'and @text='Top 80']})]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[org.openqa.selenium.NoSuchElementException: Can't locate an element by this strategy: By.chained({By.xpath: //*[@class='android.widget.TextView'and @text='Top 80']})
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:126)
-	at io.appium.java_client.pagefactory.interceptors.InterceptorOfASingleElement.intercept(InterceptorOfASingleElement.java:59)
-	at io.appium.java_client.android.AndroidElement$$EnhancerByCGLIB$$b598166c.isDisplayed(<generated>)
-	at com.automation.pages.HomePage.validateTop50Txt(HomePage.java:146)
-	at com.automation.tests.HomePageTest.verifyeElementsOnHomePageTest(HomePageTest.java:81)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:567)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:108)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:661)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:869)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1193)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:126)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:109)
-	at org.testng.TestRunner.privateRun(TestRunner.java:744)
-	at org.testng.TestRunner.run(TestRunner.java:602)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:380)
-	at org.testng.SuiteRunner.access$000(SuiteRunner.java:39)
-	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:414)
-	at org.testng.internal.thread.ThreadUtil$1.call(ThreadUtil.java:52)
-	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
-	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
-	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
-	at java.base/java.lang.Thread.run(Thread.java:830)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@25d4a280 (tried for 1 second(s) with 500 milliseconds interval)
-	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:315)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.findElement(AppiumElementLocator.java:119)
-	... 24 more
-Caused by: org.openqa.selenium.NoSuchElementException: Cannot locate an element using By.chained({By.xpath: //*[@class='android.widget.TextView'and @text='Top 80']})
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: '3.14.0', revision: 'aacccce0', time: '2018-08-02T20:19:58.91Z'
-System info: host: 'ABHI-PC', ip: '192.168.56.1', os.name: 'Windows 7', os.arch: 'amd64', os.version: '6.1', java.version: '13.0.2'
-Driver info: driver.version: AndroidDriver
-	at io.appium.java_client.pagefactory.bys.builder.ByChained.findElement(ByChained.java:74)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.bys.ContentMappedBy.findElement(ContentMappedBy.java:50)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:314)
-	at io.appium.java_client.DefaultGenericMobileDriver.findElement(DefaultGenericMobileDriver.java:58)
-	at io.appium.java_client.AppiumDriver.findElement(AppiumDriver.java:1)
-	at io.appium.java_client.android.AndroidDriver.findElement(AndroidDriver.java:1)
-	at io.appium.java_client.pagefactory.AppiumElementLocator.lambda$0(AppiumElementLocator.java:120)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:172)
-	at io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction.apply(AppiumElementLocator.java:1)
-	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:260)
-	... 26 more
-]]>
-            </full-stacktrace>
-          </exception> <!-- org.openqa.selenium.NoSuchElementException -->
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- verifyeElementsOnHomePageTest -->
-        <test-method is-config="true" signature="getResult(org.testng.ITestResult)[pri:0, instance:com.automation.tests.HomePageTest@4d0753c9]" started-at="2020-05-28T19:52:36Z" name="getResult" finished-at="2020-05-28T19:52:41Z" duration-ms="4767" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[[TestResult name=verifyeElementsOnHomePageTest status=FAILURE method=HomePageTest.verifyeElementsOnHomePageTest()[pri:1, instance:com.automation.tests.HomePageTest@4d0753c9] output={null}]]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- getResult -->
-        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.automation.tests.HomePageTest@4d0753c9]" started-at="2020-05-28T19:52:41Z" name="quitDriver" finished-at="2020-05-28T19:52:41Z" duration-ms="657" status="PASS">
->>>>>>> branch 'master' of https://github.com/abhi8130/YovoAndroidAutomation.git
+        <test-method is-config="true" signature="quitDriver()[pri:0, instance:com.automation.tests.HomePageTest@6642dc5a]" started-at="2020-05-29T19:05:45Z" name="quitDriver" finished-at="2020-05-29T19:05:45Z" duration-ms="586" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->

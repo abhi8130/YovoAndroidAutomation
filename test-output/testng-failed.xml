@@ -7,12 +7,7 @@
   </listeners>
   <test parallel="tests" name="Asus MAX Pro M1 Device(failed)">
     <parameter name="platformName" value="Android"/>
-<<<<<<< HEAD
-    <parameter name="url" value="https://device.pcloudy.com/appiumcloud/wd/hub"/>
-=======
-    <parameter name="udid" value="J7AAGF009641EL4"/>
-    <parameter name="url" value="http://0.0.0.0:4723/wd/hub"/>
->>>>>>> branch 'master' of https://github.com/abhi8130/YovoAndroidAutomation.git
+    <parameter name="url" value="http://localhost:4723/wd/hub"/>
     <classes>
       <class name="com.automation.tests.HomePageTest">
         <methods>

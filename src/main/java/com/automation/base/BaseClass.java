@@ -120,38 +120,41 @@ public class BaseClass {
 
 		switch (platformName) {
 		case "Android":
+			
+			  // capabilities to run locally
+			  capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
+			  capabilities.setCapability("appPackage",
+			  prop.getProperty("androidAppPackage"));
+			  capabilities.setCapability("appActivity",
+			  prop.getProperty("androidAppActivity"));
+			  capabilities.setCapability("deviceName", "ASUS"); //
+			  capabilities.setCapability("app", mApkfilepath);
+			  capabilities.setCapability("unicodeKeyboard", true);
+			  capabilities.setCapability("resetKeyboard", true);
+			  capabilities.setCapability("newCommandTimeout", "15");
+			  capabilities.setCapability("autoGrantPermissions", true);
+			  capabilities.setCapability("noReset", false); driver = new
+			  AndroidDriver<MobileElement>(new URL(url), capabilities);
+			 
+
 			/*
-			 * // capabilities to run locally
-			 * capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
-			 * capabilities.setCapability("appPackage",
-			 * prop.getProperty("androidAppPackage"));
-			 * capabilities.setCapability("appActivity",
-			 * prop.getProperty("androidAppActivity"));
-			 * capabilities.setCapability("deviceName", "ASUS"); //
-			 * capabilities.setCapability("app", mApkfilepath);
-			 * capabilities.setCapability("unicodeKeyboard", true);
-			 * capabilities.setCapability("resetKeyboard", true);
-			 * capabilities.setCapability("newCommandTimeout", "15");
-			 * capabilities.setCapability("autoGrantPermissions", true);
-			 * capabilities.setCapability("noReset", false); driver = new
+			 * // pCloudy capabilities capabilities.setCapability("pCloudy_Username",
+			 * "abhishek@totalitycorp.com"); capabilities.setCapability("pCloudy_ApiKey",
+			 * "djqfdcg5g36qbtj2pz93tsd2");
+			 * capabilities.setCapability("pCloudy_DurationInMinutes", 10);
+			 * capabilities.setCapability("newCommandTimeout", 600);
+			 * capabilities.setCapability("launchTimeout", 90000);
+			 * capabilities.setCapability("pCloudy_DeviceFullName",
+			 * "ONEPLUS_5_Android_9.0.0"); capabilities.setCapability("platformVersion",
+			 * "9.0.0"); capabilities.setCapability("platformName", "Android");
+			 * capabilities.setCapability("automationName", "uiautomator2");
+			 * capabilities.setCapability("pCloudy_ApplicationName",
+			 * "New_Design_YovoDanceStar.apk"); capabilities.setCapability("appPackage",
+			 * "com.getyovo"); capabilities.setCapability("appActivity",
+			 * "com.mgpl.videos.activity.SplashActivity");
+			 * capabilities.setCapability("pCloudy_WildNet", "false"); driver = new
 			 * AndroidDriver<MobileElement>(new URL(url), capabilities);
 			 */
-
-			// pCloudy capabilities
-			capabilities.setCapability("pCloudy_Username", "abhishek@totalitycorp.com");
-			capabilities.setCapability("pCloudy_ApiKey", "djqfdcg5g36qbtj2pz93tsd2");
-			capabilities.setCapability("pCloudy_DurationInMinutes", 10);
-			capabilities.setCapability("newCommandTimeout", 600);
-			capabilities.setCapability("launchTimeout", 90000);
-			capabilities.setCapability("pCloudy_DeviceFullName", "SAMSUNG_S7Edge_Android_8.0.0");
-			capabilities.setCapability("platformVersion", "8.0.0");
-			capabilities.setCapability("platformName", "Android");
-			capabilities.setCapability("automationName", "uiautomator2");
-			capabilities.setCapability("pCloudy_ApplicationName", "New_Design_YovoDanceStar.apk");
-			capabilities.setCapability("appPackage", "com.getyovo");
-			capabilities.setCapability("appActivity", "com.mgpl.videos.activity.SplashActivity");
-			capabilities.setCapability("pCloudy_WildNet", "false");
-			driver = new AndroidDriver<MobileElement>(new URL(url), capabilities);
 			break;
 
 		case "IOS":
