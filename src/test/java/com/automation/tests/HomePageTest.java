@@ -54,11 +54,11 @@ public class HomePageTest extends BaseClass {
 	}
 
 	@BeforeClass
-	@Parameters({ "platformName", "url", "udid" })
-	public void setUpHomePageClass(String platformName, String url, String udid) throws Exception {
+	@Parameters({ "platformName", "url"})
+	public void setUpHomePageClass(String platformName, String url) throws Exception {
 		try {
 			BaseClass baseClass = new BaseClass();
-			baseClass.initialize_driver(platformName, url, udid);
+			baseClass.initialize_driver(platformName, url);
 			homePage = new HomePage(driver);
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
@@ -72,6 +72,10 @@ public class HomePageTest extends BaseClass {
 	public void verifyeElementsOnHomePageTest() throws Exception {
 		log.info("***Executing verifyElementsOnHomeScreenTest***");
 		logger = extent.createTest("Verify the elements on HomePage after redirecting to the splash screen");
+		if (homePage.isMelvinIntroCloseBtnDisplayed() == true)
+			homePage.clickMelvinIntroCloseBtn();
+		else
+			System.out.println("MelvinIntroCloseBtn is not displayed");
 		//log.info("wait for continue_button to be clickable");
 		//TestUtil.waitForElementToBeClickable(By.id("continue_button"));
 		//homePage.clickContinueBtnAfterSplashScreen();
@@ -84,21 +88,19 @@ public class HomePageTest extends BaseClass {
 		log.info("verifyElementsonHomeScreenTest Ended");
 	}
 
-	/*
-	 * @Test(priority = 2, description = "Swipe to next video test")
-	 * 
-	 * @Severity(SeverityLevel.NORMAL)
-	 * 
-	 * @Description("TestCase Description: Swipe from one video to another") public
-	 * void swipeToNxtVideoTest() throws InterruptedException { try { logger =
-	 * extent.createTest("Swipe from one video to another & get the username ");
-	 * log.info("***Executing swipeToNxtVideoTest***");
-	 * //log.info("waitForElementToPresenceOfElementLocated - username");
-	 * //TestUtil.waitForElementToPresenceOfElementLocated(By.id("user_name"));
-	 * log.info("swipeverticalDown for nxt video"); TestUtil.swipeverticalDown();
-	 * log.info("swipeToNxtVideoTest Ended"); } catch (Exception e) {
-	 * e.printStackTrace(); log.error("Found Exception - swipeToNxtVideoTest"); }}
-	 */
+	
+	  @Test(priority = 2, description = "Swipe to next video test")	 
+	  @Severity(SeverityLevel.NORMAL)  
+	  @Description("TestCase Description: Swipe from one video to another") public
+	  void swipeToNxtVideoTest() throws InterruptedException { try { logger =
+	  extent.createTest("Swipe from one video to another & get the username ");
+	  log.info("***Executing swipeToNxtVideoTest***");
+	  //log.info("waitForElementToPresenceOfElementLocated - username");
+	  //TestUtil.waitForElementToPresenceOfElementLocated(By.id("user_name"));
+	  log.info("swipeverticalDown for nxt video"); TestUtil.swipeverticalDown();
+	  log.info("swipeToNxtVideoTest Ended"); } catch (Exception e) {
+	  e.printStackTrace(); log.error("Found Exception - swipeToNxtVideoTest"); }}
+	 
 
 	/*
 	 * @Test(priority = 3, retryAnalyzer =

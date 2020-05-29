@@ -37,11 +37,11 @@ public class LoginPageTest extends BaseClass {
 	}
 
 	@BeforeClass
-	@Parameters({ "platformName", "url", "udid" })
+	@Parameters({ "platformName", "url"})
 	public void setUpLoginPageClass(String platformName, String url, String udid) throws Exception {
 		try {
 			BaseClass baseClass = new BaseClass();
-			baseClass.initialize_driver(platformName, url, udid);
+			baseClass.initialize_driver(platformName, url);
 			loginPage = new LoginPage(driver);
 		} catch (MalformedURLException e) {
 			e.printStackTrace();

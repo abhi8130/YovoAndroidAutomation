@@ -29,11 +29,11 @@ public class CreatePostPageTest extends BaseClass {
 	}
 
 	@BeforeClass
-	@Parameters({ "platformName", "url", "udid" })
+	@Parameters({ "platformName", "url"})
 	public void setUpHomePageClass(String platformName, String url, String udid) throws Exception {
 		try {
 			BaseClass baseClass = new BaseClass();
-			baseClass.initialize_driver(platformName, url, udid);
+			baseClass.initialize_driver(platformName, url);
 			createPostPage = new CreatePostPage(driver);
 			homePage = new HomePage(driver);
 		} catch (MalformedURLException e) {

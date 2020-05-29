@@ -7,18 +7,16 @@
   </listeners>
   <test parallel="tests" name="Asus MAX Pro M1 Device(failed)">
     <parameter name="platformName" value="Android"/>
-    <parameter name="udid" value="J7AAGF009641EL4"/>
-    <parameter name="url" value="http://0.0.0.0:4723/wd/hub"/>
+    <parameter name="url" value="https://device.pcloudy.com/appiumcloud/wd/hub"/>
     <classes>
-      <class name="com.automation.tests.LoginPageTest">
+      <class name="com.automation.tests.HomePageTest">
         <methods>
-          <include name="loginUsingOtpTest"/>
-          <include name="logoutTest"/>
-          <include name="quitDriver"/>
+          <include name="verifyeElementsOnHomePageTest"/>
+          <include name="setUpHomePageClass"/>
           <include name="getResult"/>
-          <include name="setUpLoginPageClass"/>
+          <include name="quitDriver"/>
         </methods>
-      </class> <!-- com.automation.tests.LoginPageTest -->
+      </class> <!-- com.automation.tests.HomePageTest -->
     </classes>
   </test> <!-- Asus MAX Pro M1 Device(failed) -->
 </suite> <!-- Failed suite [Yovo Automation Test Suite] -->

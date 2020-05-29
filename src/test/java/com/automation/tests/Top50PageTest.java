@@ -31,9 +31,9 @@ public class Top50PageTest extends BaseClass {
 	}
 
 	@BeforeMethod
-	@Parameters({"platformName","url","udid"})
+	@Parameters({"platformName","url"})
 	public void setUpUserProfile(String platformName, String url, String udid) throws Exception {
-		initialize_driver(platformName,url,udid);
+		initialize_driver(platformName,url);
 		top50Page = new Top50Page(driver);
 		userProfilePage = new UserProfilePage(driver);
 		homePage = new HomePage(driver);

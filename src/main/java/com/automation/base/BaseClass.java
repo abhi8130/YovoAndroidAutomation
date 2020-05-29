@@ -105,7 +105,7 @@ public class BaseClass {
 		}
 	}
 
-	public void initialize_driver(String platformName, String url, String udid) throws Exception {
+	public void initialize_driver(String platformName, String url) throws Exception {
 
 		log = LogManager.getLogger(BaseClass.class);
 		BasicConfigurator.configure();
@@ -116,43 +116,42 @@ public class BaseClass {
 		mApkfilepath = mDirpath + "/app/Melvin app-release.apk";
 
 		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platformName);
-		capabilities.setCapability(MobileCapabilityType.UDID, udid);
+		//capabilities.setCapability(MobileCapabilityType.UDID, udid);
 
 		switch (platformName) {
 		case "Android":
-			// capabilities to run locally
-			capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
-			capabilities.setCapability("appPackage", prop.getProperty("androidAppPackage"));
-			capabilities.setCapability("appActivity", prop.getProperty("androidAppActivity"));
-			capabilities.setCapability("deviceName", "ASUS");
-			// capabilities.setCapability("app", mApkfilepath);
-			capabilities.setCapability("unicodeKeyboard", true);
-			capabilities.setCapability("resetKeyboard", true);
-			capabilities.setCapability("newCommandTimeout", "15");
-			capabilities.setCapability("autoGrantPermissions", true);
-			capabilities.setCapability("noReset", false);
-			driver = new AndroidDriver<MobileElement>(new URL(url), capabilities);
-
 			/*
-			 * //pCloudy capabilities capabilities.setCapability("pCloudy_Username",
-			 * "abhishek@totalitycorp.com"); capabilities.setCapability("pCloudy_ApiKey",
-			 * "djqfdcg5g36qbtj2pz93tsd2");
-			 * capabilities.setCapability("pCloudy_DurationInMinutes", 10);
-			 * capabilities.setCapability("newCommandTimeout", 600);
-			 * capabilities.setCapability("launchTimeout", 90000);
-			 * capabilities.setCapability("pCloudy_DeviceFullName",
-			 * "SAMSUNG_S7Edge_Android_8.0.0");
-			 * capabilities.setCapability("platformVersion", "8.0.0");
-			 * capabilities.setCapability("platformName", "Android");
-			 * capabilities.setCapability("automationName", "uiautomator2");
-			 * capabilities.setCapability("pCloudy_ApplicationName",
-			 * "Melvin_app_release.apk"); capabilities.setCapability("appPackage",
-			 * "com.getyovo"); capabilities.setCapability("appActivity",
-			 * "com.mgpl.videos.activity.SplashActivity");
-			 * capabilities.setCapability("pCloudy_WildNet", "false"); driver = new
-			 * AndroidDriver<MobileElement>(new
-			 * URL("https://device.pcloudy.com/appiumcloud/wd/hub"), capabilities);
+			 * // capabilities to run locally
+			 * capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 60);
+			 * capabilities.setCapability("appPackage",
+			 * prop.getProperty("androidAppPackage"));
+			 * capabilities.setCapability("appActivity",
+			 * prop.getProperty("androidAppActivity"));
+			 * capabilities.setCapability("deviceName", "ASUS"); //
+			 * capabilities.setCapability("app", mApkfilepath);
+			 * capabilities.setCapability("unicodeKeyboard", true);
+			 * capabilities.setCapability("resetKeyboard", true);
+			 * capabilities.setCapability("newCommandTimeout", "15");
+			 * capabilities.setCapability("autoGrantPermissions", true);
+			 * capabilities.setCapability("noReset", false); driver = new
+			 * AndroidDriver<MobileElement>(new URL(url), capabilities);
 			 */
+
+			// pCloudy capabilities
+			capabilities.setCapability("pCloudy_Username", "abhishek@totalitycorp.com");
+			capabilities.setCapability("pCloudy_ApiKey", "djqfdcg5g36qbtj2pz93tsd2");
+			capabilities.setCapability("pCloudy_DurationInMinutes", 10);
+			capabilities.setCapability("newCommandTimeout", 600);
+			capabilities.setCapability("launchTimeout", 90000);
+			capabilities.setCapability("pCloudy_DeviceFullName", "SAMSUNG_S7Edge_Android_8.0.0");
+			capabilities.setCapability("platformVersion", "8.0.0");
+			capabilities.setCapability("platformName", "Android");
+			capabilities.setCapability("automationName", "uiautomator2");
+			capabilities.setCapability("pCloudy_ApplicationName", "New_Design_YovoDanceStar.apk");
+			capabilities.setCapability("appPackage", "com.getyovo");
+			capabilities.setCapability("appActivity", "com.mgpl.videos.activity.SplashActivity");
+			capabilities.setCapability("pCloudy_WildNet", "false");
+			driver = new AndroidDriver<MobileElement>(new URL(url),capabilities);
 			break;
 
 		case "IOS":
@@ -191,16 +190,16 @@ public class BaseClass {
 		}
 		extent.flush();
 	}
-	
+
 	public void LOGWithScreenshot(ITestResult result) throws IOException, InvalidFormatException {
-	    String Base64StringofScreenshot="";
-	    File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-	    byte[] fileContent = FileUtils.readFileToByteArray(src);
-	    Base64StringofScreenshot = "data:image/png;base64,"+Base64.getEncoder().encodeToString(fileContent);
-	    if(result.getStatus() == ITestResult.SUCCESS)
-	        logger.pass(" Screenshot"+"\n"+logger.addScreenCaptureFromPath(Base64StringofScreenshot));
-	    else
-	        logger.fail("Screenshot"+"\n"+logger.addScreenCaptureFromPath(Base64StringofScreenshot));
+		String Base64StringofScreenshot = "";
+		File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
+		byte[] fileContent = FileUtils.readFileToByteArray(src);
+		Base64StringofScreenshot = "data:image/png;base64," + Base64.getEncoder().encodeToString(fileContent);
+		if (result.getStatus() == ITestResult.SUCCESS)
+			logger.pass(" Screenshot" + "\n" + logger.addScreenCaptureFromPath(Base64StringofScreenshot));
+		else
+			logger.fail("Screenshot" + "\n" + logger.addScreenCaptureFromPath(Base64StringofScreenshot));
 	}
 
 	/*

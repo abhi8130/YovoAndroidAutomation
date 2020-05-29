@@ -27,10 +27,10 @@ public class UserProfilePageTest extends BaseClass {
 	}
 
 	@BeforeClass
-	@Parameters({ "platformName", "url", "udid" })
+	@Parameters({ "platformName", "url" })
 	public void setUpUserProfileClass(String platformName, String url, String udid) throws Exception {
 		try {
-			initialize_driver(platformName, url, udid);
+			initialize_driver(platformName, url);
 			userProfilePage = new UserProfilePage(driver);
 			homePage = new HomePage(driver);
 		} catch (MalformedURLException e) {

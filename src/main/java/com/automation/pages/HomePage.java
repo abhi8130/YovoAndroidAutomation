@@ -260,7 +260,12 @@ public class HomePage extends BasePOMPage {
 		mvfIntroSkipButton.click();
 	}
 
-
-
-
+	public boolean isMelvinIntroCloseBtnDisplayed() {
+		try {
+			return melvinIntroCloseBtn.isDisplayed();
+		} catch (Exception e) {
+			e.printStackTrace();
+			return false;
+		}
+	}
 }
