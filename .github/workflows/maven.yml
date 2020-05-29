@@ -26,8 +26,8 @@ jobs:
         target: ${{ matrix.target }}
         arch: x86_64
         profile: Nexus 6
+        script: mvn test 
     - name: run tests on pCloudy   
       env:
           pCloudy_USERNAME: ${{ secrets.pCloudy_USERNAME }}
           pCloudy_ACCESS_KEY: ${{ secrets.pCloudy_ACCESS_KEY }}     
-      run: mvn clean test
