@@ -4,21 +4,18 @@ on: [push]
 
 jobs:
   build:
-    runs-on: ubuntu-latest # the machine type
-    
+    runs-on: ubuntu-latest # the machine type   
     steps:
     - uses: actions/checkout@v2 #checkout the code 
     - name: Set up JDK 1.8
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-
-    - name: run tests on pCloudy   
+    - name: Run tests on pCloudy   
       env:
           pCloudy_USERNAME: ${{ secrets.pCloudy_USERNAME }}
           pCloudy_ACCESS_KEY: ${{ secrets.pCloudy_ACCESS_KEY }} 
-      run: mvn test
-      
+      run: mvn clean test 
     - name: Allure report
       uses: afiore/action-allure-report@v0.1.0
       with:
@@ -26,3 +23,5 @@ jobs:
         results-dir: results # default is allure-results
         # Allure report target dir
         report-dir: docs # default is allure-report
+    - name: Generate allure report
+      run : mvn allure:report 
