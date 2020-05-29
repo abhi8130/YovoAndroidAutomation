@@ -15,7 +15,7 @@
 			value="ASUS_X00TD" /> -->
 		<parameter name="platformName" value="Android" />
 		<parameter name="url"
-			value="https://http://localhost:4723/wd/hub" />
+			value="http://localhost:4723/wd/hub" />
 		<!-- <parameter name="udid" value="J7AAGF009641EL4" /> -->
 		<!-- <parameter name="url"
 			value="https://device.pcloudy.com/appiumcloud/wd/hub" /> -->

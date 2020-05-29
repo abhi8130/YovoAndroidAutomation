@@ -72,6 +72,7 @@ public class HomePageTest extends BaseClass {
 	public void verifyeElementsOnHomePageTest() throws Exception {
 		log.info("***Executing verifyElementsOnHomeScreenTest***");
 		logger = extent.createTest("Verify the elements on HomePage after redirecting to the splash screen");
+		TestUtil.waitForElementToBeClickable(By.id("com.getyovo:id/close_button"));
 		if (homePage.isMelvinIntroCloseBtnDisplayed() == true)
 			homePage.clickMelvinIntroCloseBtn();
 		else
