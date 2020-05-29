@@ -1,6 +1,7 @@
 name: Appium CI
 # on push we will trigger our code
 on: [push]
+
 jobs:
   build:
     runs-on: macos-latest # the machine type
@@ -17,12 +18,12 @@ jobs:
     - name: Install and Run Appium Server
       run: |
         chmod +x ./scripts/RunAppiumServer.sh # install and run appium server in the background
-        ./scripts/runappiumserver.sh
+        ./scripts/RunAppiumServer.sh
     - name: Run Appium Tests
       uses: reactivecircus/android-emulator-runner@v1 # install and create the Emulator
       with:
-        api-level: 29
-        target: 29
+        api-level: ${{ matrix.api-level }}
+        target: ${{ matrix.target }}
         arch: x86_64
         profile: Nexus 6
-        script: mvn test
+        run: mvn clean test
