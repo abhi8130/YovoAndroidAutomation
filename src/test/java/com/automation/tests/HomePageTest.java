@@ -54,7 +54,7 @@ public class HomePageTest extends BaseClass {
 	}
 
 	@BeforeClass
-	@Parameters({ "platformName", "url"})
+	@Parameters({ "platformName", "url" })
 	public void setUpHomePageClass(String platformName, String url) throws Exception {
 		try {
 			BaseClass baseClass = new BaseClass();
@@ -76,11 +76,11 @@ public class HomePageTest extends BaseClass {
 			homePage.clickMelvinIntroCloseBtn();
 		else
 			System.out.println("MelvinIntroCloseBtn is not displayed");
-		//log.info("wait for continue_button to be clickable");
-		//TestUtil.waitForElementToBeClickable(By.id("continue_button"));
-		//homePage.clickContinueBtnAfterSplashScreen();
-		//log.info("Clicked on continue_button");
-		//	homePage.clickBackBtn();
+		// log.info("wait for continue_button to be clickable");
+		// TestUtil.waitForElementToBeClickable(By.id("continue_button"));
+		// homePage.clickContinueBtnAfterSplashScreen();
+		// log.info("Clicked on continue_button");
+		// homePage.clickBackBtn();
 		log.info("waitForUserNameToBeClickable - username");
 		boolean flag = homePage.validateTop50Txt();
 		Assert.assertTrue(flag);
@@ -88,27 +88,23 @@ public class HomePageTest extends BaseClass {
 		log.info("verifyElementsonHomeScreenTest Ended");
 	}
 
-	
-	  @Test(priority = 2, description = "Swipe to next video test")	 
-	  @Severity(SeverityLevel.NORMAL)  
-	  @Description("TestCase Description: Swipe from one video to another") public
-	  void swipeToNxtVideoTest() throws InterruptedException { try { logger =
-	  extent.createTest("Swipe from one video to another & get the username ");
-	  log.info("***Executing swipeToNxtVideoTest***");
-	  //log.info("waitForElementToPresenceOfElementLocated - username");
-	  //TestUtil.waitForElementToPresenceOfElementLocated(By.id("user_name"));
-	  log.info("swipeverticalDown for nxt video"); TestUtil.swipeverticalDown();
-	  log.info("swipeToNxtVideoTest Ended"); } catch (Exception e) {
-	  e.printStackTrace(); log.error("Found Exception - swipeToNxtVideoTest"); }}
-	 
-
-	/*
-	 * @Test(priority = 3, retryAnalyzer =
-	 * com.automation.listeners.RetryAnalyzer.class ) public void checkFailure() {
-	 * Assert.assertEquals(true, false); System.out.println("failed");
-	 * 
-	 * }
-	 */
+	@Test(priority = 2, description = "Swipe to next video test")
+	@Severity(SeverityLevel.NORMAL)
+	@Description("TestCase Description: Swipe from one video to another")
+	public void swipeToNxtVideoTest() throws InterruptedException {
+		try {
+			logger = extent.createTest("Swipe from one video to another & get the username ");
+			log.info("***Executing swipeToNxtVideoTest***");
+			// log.info("waitForElementToPresenceOfElementLocated - username");
+			// TestUtil.waitForElementToPresenceOfElementLocated(By.id("user_name"));
+			log.info("swipeverticalDown for nxt video");
+			TestUtil.swipeverticalDown();
+			log.info("swipeToNxtVideoTest Ended");
+		} catch (Exception e) {
+			e.printStackTrace();
+			log.error("Found Exception - swipeToNxtVideoTest");
+		}
+	}
 
 	@AfterClass
 	public void quitDriver() {

@@ -116,7 +116,7 @@ public class BaseClass {
 		mApkfilepath = mDirpath + "/app/Melvin app-release.apk";
 
 		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platformName);
-		//capabilities.setCapability(MobileCapabilityType.UDID, udid);
+		// capabilities.setCapability(MobileCapabilityType.UDID, udid);
 
 		switch (platformName) {
 		case "Android":
@@ -151,7 +151,7 @@ public class BaseClass {
 			capabilities.setCapability("appPackage", "com.getyovo");
 			capabilities.setCapability("appActivity", "com.mgpl.videos.activity.SplashActivity");
 			capabilities.setCapability("pCloudy_WildNet", "false");
-			driver = new AndroidDriver<MobileElement>(new URL(url),capabilities);
+			driver = new AndroidDriver<MobileElement>(new URL(url), capabilities);
 			break;
 
 		case "IOS":
@@ -200,16 +200,6 @@ public class BaseClass {
 			logger.pass(" Screenshot" + "\n" + logger.addScreenCaptureFromPath(Base64StringofScreenshot));
 		else
 			logger.fail("Screenshot" + "\n" + logger.addScreenCaptureFromPath(Base64StringofScreenshot));
+
 	}
-
-	/*
-	 * public synchronized void onTestFailure(ITestResult result) { try { String
-	 * base64Screenshot =
-	 * ((TakesScreenshot)driver).getScreenshotAs(OutputType.BASE64);
-	 * MediaEntityModelProvider mediaModel =
-	 * MediaEntityBuilder.createScreenCaptureFromBase64String(base64Screenshot).
-	 * build(); logger.fail("captured image: ", mediaModel); } catch (IOException e)
-	 * { e.printStackTrace(); } logger.fail(result.getThrowable().getMessage()); }
-	 */
-
 }

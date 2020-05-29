@@ -14,11 +14,19 @@
 		<!-- <parameter name="platformVersion" value="9.0" /> <parameter name="deviceName" 
 			value="ASUS_X00TD" /> -->
 		<parameter name="platformName" value="Android" />
+<<<<<<< HEAD
 <!-- 		<parameter name="udid" value="J7AAGF009641EL4" />
  -->		<parameter name="url" value="https://device.pcloudy.com/appiumcloud/wd/hub" />
 
 		<classes>
 			<class name="com.automation.tests.HomePageTest" />
+=======
+		<parameter name="udid" value="J7AAGF009641EL4" />
+		<parameter name="url" value="http://0.0.0.0:4723/wd/hub" />
+
+		<classes>
+			<class name="com.automation.tests.LoginPageTest" />
+>>>>>>> branch 'master' of https://github.com/abhi8130/YovoAndroidAutomation.git
 <!-- 			<class name="com.automation.tests.CreatePostPageTest" />
  -->			<!-- <class name="com.automation.tests.UserProfilePageTest" /> -->
 		</classes>

@@ -29,8 +29,9 @@ public class CreatePostPageTest extends BaseClass {
 	}
 
 	@BeforeClass
+
 	@Parameters({ "platformName", "url"})
-	public void setUpHomePageClass(String platformName, String url, String udid) throws Exception {
+	public void setUpHomePageClass(String platformName, String url) throws Exception {
 		try {
 			BaseClass baseClass = new BaseClass();
 			baseClass.initialize_driver(platformName, url);

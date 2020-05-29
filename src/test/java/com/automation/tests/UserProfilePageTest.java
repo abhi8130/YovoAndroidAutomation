@@ -27,7 +27,7 @@ public class UserProfilePageTest extends BaseClass {
 	}
 
 	@BeforeClass
-	@Parameters({ "platformName", "url" })
+	@Parameters({ "platformName", "url"})
 	public void setUpUserProfileClass(String platformName, String url, String udid) throws Exception {
 		try {
 			initialize_driver(platformName, url);
