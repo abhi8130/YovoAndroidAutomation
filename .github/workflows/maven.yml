@@ -11,17 +11,8 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
-    - name: Run tests on pCloudy   
+    - name: Run tests on BROWSERSTACK   
       env:
           BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
           BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }} 
-      run: mvn clean test 
-    - name: Allure report
-      uses: afiore/action-allure-report@v0.1.0
-      with:
-        # Allure test result data dir
-        results-dir: results # default is allure-results
-        # Allure report target dir
-        report-dir: docs # default is allure-report
-    - name: Generate allure report
-      run : mvn allure:report 
+      run: mvn clean test
