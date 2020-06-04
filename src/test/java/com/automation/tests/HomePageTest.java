@@ -54,11 +54,11 @@ public class HomePageTest extends BaseClass {
 	}
 
 	@BeforeClass
-	@Parameters({ "platformName", "url" })
-	public void setUpHomePageClass(String platformName, String url) throws Exception {
+	@Parameters({ "platformName", "deviceName" })
+	public void setUpHomePageClass(String platformName, String deviceName) throws Exception {
 		try {
 			BaseClass baseClass = new BaseClass();
-			baseClass.initialize_driver(platformName, url);
+			baseClass.initialize_driver(platformName, deviceName);
 			homePage = new HomePage(driver);
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block

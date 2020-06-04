@@ -14,15 +14,15 @@
 		<!-- <parameter name="platformVersion" value="9.0" /> <parameter name="deviceName" 
 			value="ASUS_X00TD" /> -->
 		<parameter name="platformName" value="Android" />
-	<!-- 	<parameter name="url"
-			value="http://localhost:4723/wd/hub" /> -->
+		<!-- <parameter name="url" value="http://localhost:4723/wd/hub" /> -->
 		<!-- <parameter name="udid" value="J7AAGF009641EL4" /> -->
-		<parameter name="url"
-			value="https://device.pcloudy.com/appiumcloud/wd/hub" />
-
+		<!-- <parameter name="url" value="https://device.pcloudy.com/appiumcloud/wd/hub" 
+			/> -->
+		<parameter name="deviceName"
+			value="Google Pixel 3" />
 		<classes>
 			<class name="com.automation.tests.HomePageTest" />
-			<!-- <class name="com.automation.tests.CreatePostPageTest" /> -->			
+			<!-- <class name="com.automation.tests.CreatePostPageTest" /> -->
 			<!-- <class name="com.automation.tests.UserProfilePageTest" /> -->
 		</classes>
 	</test>

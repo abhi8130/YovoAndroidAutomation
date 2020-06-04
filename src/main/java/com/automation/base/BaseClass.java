@@ -59,6 +59,8 @@ public class BaseClass {
 	public static ExtentReports extent;
 	public static ExtentTest logger;
 	public static Logger log;
+	public static String userName = "abhishekchauhan13";
+	public static String accessKey = "rhHsE7Vd1a61TWpPGxad";
 	public static DesiredCapabilities capabilities = new DesiredCapabilities();
 
 	public static void setDriver(AndroidDriver<MobileElement> driver) {
@@ -105,12 +107,12 @@ public class BaseClass {
 		}
 	}
 
-	public void initialize_driver(String platformName, String url) throws Exception {
+	public void initialize_driver(String platformName, String deviceName) throws Exception {
 
 		log = LogManager.getLogger(BaseClass.class);
 		BasicConfigurator.configure();
 
-		File appDir = new File("/src/main/resources/apk");
+		File appDir = new File("src");
 		File app = new File(appDir, "yovoapp-release.apk");
 		mDirpath = System.getProperty("user.dir");
 		mApkfilepath = mDirpath + "/app/Melvin app-release.apk";
@@ -138,21 +140,39 @@ public class BaseClass {
 			 * AndroidDriver<MobileElement>(new URL(url), capabilities);
 			 */
 
-			// pCloudy capabilities
-			capabilities.setCapability("pCloudy_Username", "abhishek@totalitycorp.com");
-			capabilities.setCapability("pCloudy_ApiKey", "djqfdcg5g36qbtj2pz93tsd2");
-			capabilities.setCapability("pCloudy_DurationInMinutes", 10);
-			capabilities.setCapability("newCommandTimeout", 600);
-			capabilities.setCapability("launchTimeout", 90000);
-			capabilities.setCapability("pCloudy_DeviceFullName", "ONEPLUS_5_Android_9.0.0");
-			capabilities.setCapability("platformVersion", "9.0.0");
-			capabilities.setCapability("platformName", "Android");
-			capabilities.setCapability("automationName", "uiautomator2");
-			capabilities.setCapability("pCloudy_ApplicationName", "New_Design_YovoDanceStar.apk");
+			/*
+			 * // pCloudy capabilities capabilities.setCapability("pCloudy_Username",
+			 * "abhishek@totalitycorp.com"); capabilities.setCapability("pCloudy_ApiKey",
+			 * "djqfdcg5g36qbtj2pz93tsd2");
+			 * capabilities.setCapability("pCloudy_DurationInMinutes", 10);
+			 * capabilities.setCapability("newCommandTimeout", 600);
+			 * capabilities.setCapability("launchTimeout", 90000);
+			 * capabilities.setCapability("pCloudy_DeviceFullName",
+			 * "ONEPLUS_5_Android_9.0.0"); capabilities.setCapability("platformVersion",
+			 * "9.0.0"); capabilities.setCapability("platformName", "Android");
+			 * capabilities.setCapability("automationName", "uiautomator2");
+			 * capabilities.setCapability("pCloudy_ApplicationName",
+			 * "New_Design_YovoDanceStar.apk"); capabilities.setCapability("appPackage",
+			 * "com.getyovo"); capabilities.setCapability("appActivity",
+			 * "com.mgpl.videos.activity.SplashActivity");
+			 * capabilities.setCapability("pCloudy_WildNet", "false"); driver = new
+			 * AndroidDriver<MobileElement>(new URL(url), capabilities);
+			 */
+
+			// browserstack capabilities
+			capabilities.setCapability("platformName", platformName);
+			capabilities.setCapability("device", deviceName);
+			capabilities.setCapability("os_version", "9.0");
+			capabilities.setCapability("app", "bs://1fc946bbd8e20df327e8f2a3b7b87ed270e17695");
+			capabilities.setCapability("automationame", "uiautomator2");
+			capabilities.setCapability("projectName", "Yovo Android Automtaion");
+			capabilities.setCapability("buildName", "New_Design_YovoDanceStar.apk");
+			capabilities.setCapability("realMobile", "true");
 			capabilities.setCapability("appPackage", "com.getyovo");
 			capabilities.setCapability("appActivity", "com.mgpl.videos.activity.SplashActivity");
-			capabilities.setCapability("pCloudy_WildNet", "false");
-			driver = new AndroidDriver<MobileElement>(new URL(url), capabilities);
+			driver = new AndroidDriver<MobileElement>
+			(new URL("https://" + userName + ":" + accessKey + "@hub-cloud.browserstack.com/wd/hub"),
+					capabilities);
 			break;
 
 		case "IOS":
@@ -201,6 +221,5 @@ public class BaseClass {
 			logger.pass(" Screenshot" + "\n" + logger.addScreenCaptureFromPath(Base64StringofScreenshot));
 		else
 			logger.fail("Screenshot" + "\n" + logger.addScreenCaptureFromPath(Base64StringofScreenshot));
-
 	}
 }
