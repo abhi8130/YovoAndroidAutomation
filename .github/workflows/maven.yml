@@ -13,8 +13,8 @@ jobs:
         java-version: 1.8
     - name: Run tests on pCloudy   
       env:
-          pCloudy_USERNAME: ${{ secrets.pCloudy_USERNAME }}
-          pCloudy_ACCESS_KEY: ${{ secrets.pCloudy_ACCESS_KEY }} 
+          BROWSERSTACK_USERNAME: ${{ secrets.BROWSERSTACK_USERNAME }}
+          BROWSERSTACK_ACCESS_KEY: ${{ secrets.BROWSERSTACK_ACCESS_KEY }} 
       run: mvn clean test 
     - name: Allure report
       uses: afiore/action-allure-report@v0.1.0
