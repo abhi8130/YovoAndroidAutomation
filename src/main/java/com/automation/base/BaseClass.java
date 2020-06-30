@@ -157,7 +157,7 @@ public class BaseClass {
 		// capabilities.setCapability( "noReset", true);
 		// capabilities.setCapability("fullReset", false);
 		try {
-			driver = new AndroidDriver(new URL("http://localhost:" + port + "/wd/hub"), capabilities);
+			driver = new AndroidDriver(new URL("http://localhost:8000/wd/hub"), capabilities);
 			setDriver(driver);
 			System.out.println("Driver is now set with threadlocal");
 		} catch (MalformedURLException e) {
