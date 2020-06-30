@@ -1,22 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Yovo Automation Test Suite]" guice-stage="DEVELOPMENT">
-  <listeners>
-    <listener class-name="com.automation.listeners.TestAllureListener"/>
-    <listener class-name="com.automation.listeners.TestNGlisteners"/>
-  </listeners>
-  <test parallel="tests" name="Asus MAX Pro M1 Device(failed)">
+<suite thread-count="2" guice-stage="DEVELOPMENT" name="Failed suite [Yovo Automation Test Suite]" parallel="tests">
+  <test name="Xiaomi(failed)" parallel="tests">
+    <parameter name="port" value="8001"/>
     <parameter name="platformName" value="Android"/>
-    <parameter name="deviceName" value="Google Pixel 3"/>
+    <parameter name="udid" value="164cd41d9805"/>
+    <parameter name="deviceName" value="Redmi Note 4"/>
     <classes>
       <class name="com.automation.tests.HomePageTest">
         <methods>
-          <include name="verifyeElementsOnHomePageTest"/>
+          <include name="swipeToNxtVideoTest"/>
           <include name="setUpHomePageClass"/>
-          <include name="getResult"/>
-          <include name="quitDriver"/>
+          <include name="tearDown"/>
+          <include name="testmethod"/>
         </methods>
       </class> <!-- com.automation.tests.HomePageTest -->
     </classes>
-  </test> <!-- Asus MAX Pro M1 Device(failed) -->
+  </test> <!-- Xiaomi(failed) -->
 </suite> <!-- Failed suite [Yovo Automation Test Suite] -->

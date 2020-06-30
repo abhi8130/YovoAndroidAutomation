@@ -1,5 +1,6 @@
 package com.automation.pages;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -16,8 +17,8 @@ public class UserProfilePage extends BasePOMPage {
 	@AndroidFindBy(id = "send_coin_text")
 	private AndroidElement sendCoinTxt;
 
-	public UserProfilePage(AndroidDriver<MobileElement> driver) {
-		super(driver);
+	public UserProfilePage(AppiumDriver appiumDriver) {
+		super(appiumDriver);
 	}
 
 	public String getUserNameOnUserProfile() {

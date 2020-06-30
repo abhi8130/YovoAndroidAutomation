@@ -90,8 +90,8 @@ public class CreatePostPage extends BasePOMPage {
 	
 
 	// initialize objects
-	public CreatePostPage(AndroidDriver<MobileElement> driver) {
-		super(driver);
+	public CreatePostPage(AppiumDriver appiumDriver) {
+		super(appiumDriver);
 	}
 
 	//mvf actions

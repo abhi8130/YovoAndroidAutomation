@@ -1,36 +1,29 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Yovo Automation Test Suite" parallel="tests"
-	thread-count="2" verbose="1">
-
-	<listeners>
-		<listener
-			class-name="com.automation.listeners.TestAllureListener" />
-		<listener
-			class-name="com.automation.listeners.TestNGlisteners" />
-	</listeners>
-
-	<test name="Asus MAX Pro M1 Device" preserve-order="true">
-		<!-- <parameter name="platformVersion" value="9.0" /> <parameter name="deviceName" 
-			value="ASUS_X00TD" /> -->
+<suite name="Suite" parallel="tests">
+	<test name="Asus max pro m1">
+		<listeners>
+			<listener class-name="com.automation.listeners.TestListener" />
+		</listeners>
 		<parameter name="platformName" value="Android" />
-		<!-- <parameter name="url" value="http://localhost:4723/wd/hub" /> -->
-		<!-- <parameter name="udid" value="J7AAGF009641EL4" /> -->
-		<!-- <parameter name="url" value="https://device.pcloudy.com/appiumcloud/wd/hub" 
-			/> -->
-		<parameter name="deviceName"
-			value="Google Pixel 3" />
+		<parameter name="udid" value="J7AAGF009641EL4" />
+		<parameter name="deviceName" value="Asus 
+		Max Pro m1" />
+		<parameter name="port" value="8000" />
 		<classes>
-			<class name="com.automation.tests.HomePageTest" />
-			<!-- <class name="com.automation.tests.CreatePostPageTest" /> -->
-			<!-- <class name="com.automation.tests.UserProfilePageTest" /> -->
+			<class name="com.automation.tests.HomePageTest"></class>
 		</classes>
 	</test>
 
-	<!-- <test name="Asus MAX Pro M2 Device" preserve-order="true"> <parameter 
-		name="platformVersion" value="9.0" /> <parameter name="deviceName" value="ASUS_X00TD" 
-		/> <parameter name="platformName" value="Android" /> <parameter name="udid" 
-		value="JCAAGF0497053XA" /> <parameter name="url" value="http://0.0.0.0:4724/wd/hub" 
-		/> <classes> <class name="com.automation.tests.HomePageTest" /> </classes> 
-		</test> -->
+	<test name="Xiaomi">
+		<listeners>
+			<listener class-name="com.automation.listeners.TestListener" />
+		</listeners>
+		<parameter name="platformName" value="Android" />
+		<parameter name="udid" value="164cd41d9805" />
+		<parameter name="deviceName" value="Redmi" />
+		<parameter name="port" value="8001" />
+		<classes>
+			<class name="com.automation.tests.HomePageTest"></class>
+		</classes>
+	</test>
 </suite> <!-- Suite -->

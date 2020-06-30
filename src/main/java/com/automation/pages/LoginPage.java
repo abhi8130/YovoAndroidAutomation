@@ -66,8 +66,8 @@ public class LoginPage extends BasePOMPage {
 	private AndroidElement sendCoinTxt;
 
 	// initialize objects
-	public LoginPage(AndroidDriver<MobileElement> driver) {
-		super(driver);
+	public LoginPage(AppiumDriver appiumDriver) {
+		super(appiumDriver);
 	}
 
 	// log in actions

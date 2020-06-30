@@ -126,9 +126,11 @@ public class HomePage extends BasePOMPage {
 	@AndroidFindBy(id="com.getyovo:id/mvfVideoTitle")
 	private AndroidElement mvfVideoTitle;
 	
+	@AndroidFindBy(id="com.getyovo:id/privacy_policy")
+	private AndroidElement privacypolicyTxt;
 	
-	public HomePage(AndroidDriver<MobileElement> driver) {
-		super(driver);
+	public HomePage(AppiumDriver appiumDriver) {
+		super(appiumDriver);
 	}
 
 	@Step("Clicks on continue button after splashscreen")
@@ -267,6 +269,15 @@ public class HomePage extends BasePOMPage {
 			e.printStackTrace();
 			return false;
 		}
+	}
+	
+	@Step("Click on Back button")
+	public void clickOnProfileLayoutFromNavigationBar() {
+		layout5_ProfileTab.click();
+	}
+	
+	public void clickPrivacyPolicyTxt() {
+		privacypolicyTxt.click();
 	}
 
 }

@@ -1,22 +1,37 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite thread-count="2" parallel="tests" name="Failed suite [Yovo Automation Test Suite]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [Suite]" parallel="tests">
   <listeners>
-    <listener class-name="com.automation.listeners.TestAllureListener"/>
-    <listener class-name="com.automation.listeners.TestNGlisteners"/>
+    <listener class-name="com.automation.listeners.TestListener"/>
   </listeners>
-  <test parallel="tests" name="Asus MAX Pro M1 Device(failed)">
+  <test name="Asus max pro m1(failed)" parallel="tests">
+    <parameter name="port" value="8000"/>
     <parameter name="platformName" value="Android"/>
-    <parameter name="deviceName" value="Google Pixel 3"/>
+    <parameter name="udid" value="J7AAGF009641EL4"/>
+    <parameter name="deviceName" value="Asus    Max Pro m1"/>
     <classes>
       <class name="com.automation.tests.HomePageTest">
         <methods>
-          <include name="verifyeElementsOnHomePageTest"/>
-          <include name="setUpHomePageClass"/>
-          <include name="getResult"/>
-          <include name="quitDriver"/>
+          <include name="prepareTest"/>
+          <include name="tearDown"/>
+          <include name="testmethod"/>
         </methods>
       </class> <!-- com.automation.tests.HomePageTest -->
     </classes>
-  </test> <!-- Asus MAX Pro M1 Device(failed) -->
-</suite> <!-- Failed suite [Yovo Automation Test Suite] -->
+  </test> <!-- Asus max pro m1(failed) -->
+  <test name="Xiaomi(failed)" parallel="tests">
+    <parameter name="port" value="8001"/>
+    <parameter name="platformName" value="Android"/>
+    <parameter name="udid" value="164cd41d9805"/>
+    <parameter name="deviceName" value="Redmi"/>
+    <classes>
+      <class name="com.automation.tests.HomePageTest">
+        <methods>
+          <include name="prepareTest"/>
+          <include name="tearDown"/>
+          <include name="testmethod"/>
+        </methods>
+      </class> <!-- com.automation.tests.HomePageTest -->
+    </classes>
+  </test> <!-- Xiaomi(failed) -->
+</suite> <!-- Failed suite [Suite] -->

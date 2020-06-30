@@ -31,40 +31,34 @@ public class Top50PageTest extends BaseClass {
 	}
 
 	@BeforeMethod
-	@Parameters({"platformName","url"})
-	public void setUpUserProfile(String platformName, String url, String udid) throws Exception {
-		initialize_driver(platformName,url);
-		top50Page = new Top50Page(driver);
-		userProfilePage = new UserProfilePage(driver);
-		homePage = new HomePage(driver);
+	@Parameters({"platformName","url","port","deviceName"})
+	public void setUpUserProfile(String udid, int port, String platformName, String deviceName) throws Exception {
+		BaseClass.createInstance(udid, port, platformName,deviceName);
+		top50Page = new Top50Page(BaseClass.getDriver());
+		userProfilePage = new UserProfilePage(BaseClass.getDriver());
+		homePage = new HomePage(BaseClass.getDriver());
 	}
 
-	@Test
-	public void scrollOnTop50TabAndClickFromListTest() {
-		try {
-			log.info("*** Executing scrollOnTop50Test***");
-			log.info("waitForElementToBeClickable - Top 50_Text ");
-			TestUtil.waitForElementToBeClickable(By.xpath("//*[@class='android.widget.TextView'and @text='Top 50']"));
-			top50Page.clickTop50Txt();
-			log.info("Clicked Top 50 Txt");
-			TestUtil.waitForElementToBeClickable(By.id("user_profile_image"));
-			log.info("clickElementsFromList");
-			TestUtil.clickElementFromListByIndex("user_profile_image", 5);
-			log.info("waitForElementToBeClickable - back_button ");
-			TestUtil.waitForElementToBeClickable(By.id("back_button"));
-			top50Page.clickOnBackBtn();
-			boolean flag = top50Page.verifyTop50Txt();
-			Assert.assertTrue(flag);
-			log.info("scrollOnTop50Test Ended");
-		} catch (Exception e) {
-			e.printStackTrace();
-			log.error("Found exception - scrollOnTop50TabAndClickFromListTest ");
-		}
-	}
+	/*
+	 * @Test public void scrollOnTop50TabAndClickFromListTest() { try {
+	 * log.info("*** Executing scrollOnTop50Test***");
+	 * log.info("waitForElementToBeClickable - Top 50_Text ");
+	 * TestUtil.waitForElementToBeClickable(By.
+	 * xpath("//*[@class='android.widget.TextView'and @text='Top 50']"));
+	 * top50Page.clickTop50Txt(); log.info("Clicked Top 50 Txt");
+	 * TestUtil.waitForElementToBeClickable(By.id("user_profile_image"));
+	 * log.info("clickElementsFromList");
+	 * TestUtil.clickElementFromListByIndex("user_profile_image", 5);
+	 * log.info("waitForElementToBeClickable - back_button ");
+	 * TestUtil.waitForElementToBeClickable(By.id("back_button"));
+	 * top50Page.clickOnBackBtn(); boolean flag = top50Page.verifyTop50Txt();
+	 * Assert.assertTrue(flag); log.info("scrollOnTop50Test Ended"); } catch
+	 * (Exception e) { e.printStackTrace();
+	 * log.error("Found exception - scrollOnTop50TabAndClickFromListTest "); } }
+	 */
 
 	@AfterMethod
 	public void tearDown() {
-		driver.quit();
 		// stop appium server
 		// appiumService.stop();
 	}

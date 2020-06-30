@@ -27,43 +27,37 @@ public class UserProfilePageTest extends BaseClass {
 	}
 
 	@BeforeClass
-	@Parameters({ "platformName", "url"})
-	public void setUpUserProfileClass(String platformName, String url, String udid) throws Exception {
+	@Parameters({ "platformName", "url","port","deviceName"})
+	public void setUpUserProfileClass(String udid, int port, String platformName, String deviceName) throws Exception {
 		try {
-			initialize_driver(platformName, url);
-			userProfilePage = new UserProfilePage(driver);
-			homePage = new HomePage(driver);
+			BaseClass.createInstance(udid, port, platformName,deviceName);
+			userProfilePage = new UserProfilePage(BaseClass.getDriver());
+			homePage = new HomePage(BaseClass.getDriver());
 		} catch (MalformedURLException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
 
-	@Test(priority = 1)
-	public void verifyUserNameOnProfilePageTest() {
-		try {
-			// homePage.clickContinueBtnAfterSplashScreen();
-			log.info("*** Executing verifyUserNameOnProfilePageTest***");
-			log.info("waitForElementToBeClickable - user_name ");
-			TestUtil.waitForElementToBeClickable(By.id("user_name"));
-			log.info("getUserNamefromHomeScreen");
-			String usernameOnHomeScreeen = homePage.getUserNamefromHomePage();
-			userProfilePage = homePage.clickUserName();
-			log.info("getUserNameOnUserProfile");
-			String usernameOnProfile = userProfilePage.getUserNameOnUserProfile();
-			Assert.assertEquals(usernameOnHomeScreeen, usernameOnProfile);
-			log.info("Assertion passed - username");
-			log.info("clickOnBackBtn");
-			userProfilePage.clickOnBackBtn();
-			boolean flag = userProfilePage.verifySendCoinsTxt();
-			Assert.assertTrue(flag);
-			log.info("Assertion Passed - SendCoinsTxt is displayed");
-			log.info("validateuserNameOnProfilePageTest");
-		} catch (Exception e) {
-			e.printStackTrace();
-			log.error("Found exception - verifyUserNameOnProfilePageTest ");
-		}
-	}
+	/*
+	 * @Test(priority = 1) public void verifyUserNameOnProfilePageTest() { try { //
+	 * homePage.clickContinueBtnAfterSplashScreen();
+	 * log.info("*** Executing verifyUserNameOnProfilePageTest***");
+	 * log.info("waitForElementToBeClickable - user_name ");
+	 * TestUtil.waitForElementToBeClickable(By.id("user_name"));
+	 * log.info("getUserNamefromHomeScreen"); String usernameOnHomeScreeen =
+	 * homePage.getUserNamefromHomePage(); userProfilePage =
+	 * homePage.clickUserName(); log.info("getUserNameOnUserProfile"); String
+	 * usernameOnProfile = userProfilePage.getUserNameOnUserProfile();
+	 * Assert.assertEquals(usernameOnHomeScreeen, usernameOnProfile);
+	 * log.info("Assertion passed - username"); log.info("clickOnBackBtn");
+	 * userProfilePage.clickOnBackBtn(); boolean flag =
+	 * userProfilePage.verifySendCoinsTxt(); Assert.assertTrue(flag);
+	 * log.info("Assertion Passed - SendCoinsTxt is displayed");
+	 * log.info("validateuserNameOnProfilePageTest"); } catch (Exception e) {
+	 * e.printStackTrace();
+	 * log.error("Found exception - verifyUserNameOnProfilePageTest "); } }
+	 */
 
 	@AfterClass
 	public void tearDown() {

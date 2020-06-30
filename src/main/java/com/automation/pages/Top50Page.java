@@ -1,5 +1,6 @@
 package com.automation.pages;
 
+import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
 import io.appium.java_client.android.AndroidElement;
@@ -16,8 +17,8 @@ public class Top50Page extends BasePOMPage {
 	@AndroidFindBy(xpath = "//*[@class='android.widget.TextView'and @text='Top 50']")
 	private AndroidElement top50Txt;
 
-	public Top50Page(AndroidDriver<MobileElement> driver) {
-		super(driver);
+	public Top50Page(AppiumDriver appiumDriver) {
+		super(appiumDriver);
 	}
 
 	public void clickOnBackBtn() {
