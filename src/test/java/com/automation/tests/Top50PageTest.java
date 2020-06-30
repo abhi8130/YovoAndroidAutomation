@@ -32,8 +32,8 @@ public class Top50PageTest extends BaseClass {
 
 	@BeforeMethod
 	@Parameters({"platformName","url","port","deviceName"})
-	public void setUpUserProfile(int port, String platformName, String deviceName) throws Exception {
-		BaseClass.createInstance(port, platformName,deviceName);
+	public void setUpUserProfile(String url, String platformName, String deviceName) throws Exception {
+		BaseClass.createInstance(url, platformName,deviceName);
 		top50Page = new Top50Page(BaseClass.getDriver());
 		userProfilePage = new UserProfilePage(BaseClass.getDriver());
 		homePage = new HomePage(BaseClass.getDriver());

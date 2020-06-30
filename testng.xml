@@ -7,7 +7,7 @@
 		<parameter name="platformName" value="Android" />
 <!-- 		<parameter name="udid" value="J7AAGF009641EL4" />
  -->		<parameter name="deviceName" value="Nexus" />
-		<parameter name="port" value="8000" />
+		<parameter name="url" value="http://0.0.0.0:4723/wd/hub" />
 		<classes>
 			<class name="com.automation.tests.HomePageTest"></class>
 		</classes>

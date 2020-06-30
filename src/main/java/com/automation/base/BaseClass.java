@@ -124,7 +124,7 @@ public class BaseClass {
 		PageFactory.initElements(new AppiumFieldDecorator(getDriver()), this);
 	}
 
-	public static void createInstance(int port, String platformName, String deviceName)
+	public static void createInstance(String url, String platformName, String deviceName)
 			throws AppiumServerHasNotBeenStartedLocallyException, Exception {
 
 		AppiumDriver driver = null;
@@ -157,7 +157,7 @@ public class BaseClass {
 		// capabilities.setCapability( "noReset", true);
 		// capabilities.setCapability("fullReset", false);
 		try {
-			driver = new AndroidDriver(new URL("http://localhost:8000/wd/hub"), capabilities);
+			driver = new AndroidDriver(new URL(url), capabilities);
 			setDriver(driver);
 			System.out.println("Driver is now set with threadlocal");
 		} catch (MalformedURLException e) {

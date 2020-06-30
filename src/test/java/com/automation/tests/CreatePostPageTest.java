@@ -31,9 +31,9 @@ public class CreatePostPageTest extends BaseClass {
 
 	@BeforeMethod
 	@Parameters({ "udid", "port", "platformName","deviceName" })
-	public void setUpHomePageClass(int port, String platformName, String deviceName) throws Exception {
+	public void setUpHomePageClass(String url, String platformName, String deviceName) throws Exception {
 		try {
-			BaseClass.createInstance(port, platformName,deviceName);
+			BaseClass.createInstance(url, platformName,deviceName);
 			createPostPage = new CreatePostPage(BaseClass.getDriver());
 			homePage = new HomePage(BaseClass.getDriver());
 		} catch (MalformedURLException e) {

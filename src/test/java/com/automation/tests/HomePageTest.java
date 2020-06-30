@@ -57,11 +57,11 @@ public class HomePageTest extends BaseClass {
 		super();
 	}
 
-	@Parameters({"port", "platformName", "deviceName" })
+	@Parameters({"url", "platformName", "deviceName" })
 	@BeforeMethod
-	public void prepareTest(int port, String platformName, String deviceName) {
+	public void prepareTest(String url, String platformName, String deviceName) {
 		try {
-			BaseClass.createInstance(port, platformName, deviceName);
+			BaseClass.createInstance(url, platformName, deviceName);
 		} catch (AppiumServerHasNotBeenStartedLocallyException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
