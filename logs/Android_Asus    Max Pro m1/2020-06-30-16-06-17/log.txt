@@ -1,0 +1,1 @@
+11:Android:Asus    Max Pro m1:com.automation.tests.HomePageTest:---Enter testmethod---

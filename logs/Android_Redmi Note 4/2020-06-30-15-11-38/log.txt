@@ -1,0 +1,1 @@
+11:Android:Redmi Note 4:com.automation.tests.HomePageTest:***Enter SwipeMethod***
