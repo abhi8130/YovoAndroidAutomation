@@ -6,8 +6,7 @@
 		</listeners>
 		<parameter name="platformName" value="Android" />
 		<parameter name="udid" value="J7AAGF009641EL4" />
-		<parameter name="deviceName" value="Asus 
-		Max Pro m1" />
+		<parameter name="deviceName" value="Asus Max Pro m1" />
 		<parameter name="port" value="8000" />
 		<classes>
 			<class name="com.automation.tests.HomePageTest"></class>

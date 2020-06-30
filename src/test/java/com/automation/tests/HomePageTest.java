@@ -82,32 +82,24 @@ public class HomePageTest extends BaseClass {
 		Assert.assertTrue(flag);
 	}
 
-	@Test(priority = 2)
-	public void swipeToNxtVideoTest() throws InterruptedException {
-		try {
-			System.out.println("Enter SwipeMethod");
-			utils.log("***Enter SwipeMethod***");
-			BaseClass.getDriver().manage().timeouts().implicitlyWait(5000, TimeUnit.MILLISECONDS);
-			if (homePage.isMelvinIntroCloseBtnDisplayed() == true)
-				homePage.clickMelvinIntroCloseBtn();
-			else
-				System.out.println("MelvinIntroCloseBtn is not displayed");
-
-			Thread.sleep(3000);
-			Dimension size = BaseClass.getDriver().manage().window().getSize();
-			System.out.println("Size" + size);
-			int height = size.getHeight();
-			int width = size.getWidth();
-			int x = width / 2;
-			int top_y = (int) (height * 0.80);
-			int bottom_y = (int) (height * 0.20);
-			TouchAction ts = new TouchAction(BaseClass.getDriver());
-			ts.longPress(PointOption.point(x, top_y)).moveTo(PointOption.point(x, bottom_y)).release().perform();
-		} catch (Exception e) {
-			e.printStackTrace();
-			System.out.println("Found Exception - swipeToNxtVideoTest");
-		}
-	}
+	/*
+	 * @Test(priority = 2) public void swipeToNxtVideoTest() throws
+	 * InterruptedException { try { System.out.println("Enter SwipeMethod");
+	 * utils.log("***Enter SwipeMethod***");
+	 * BaseClass.getDriver().manage().timeouts().implicitlyWait(5000,
+	 * TimeUnit.MILLISECONDS); if (homePage.isMelvinIntroCloseBtnDisplayed() ==
+	 * true) homePage.clickMelvinIntroCloseBtn(); else
+	 * System.out.println("MelvinIntroCloseBtn is not displayed");
+	 * 
+	 * Thread.sleep(3000); Dimension size =
+	 * BaseClass.getDriver().manage().window().getSize(); System.out.println("Size"
+	 * + size); int height = size.getHeight(); int width = size.getWidth(); int x =
+	 * width / 2; int top_y = (int) (height * 0.80); int bottom_y = (int) (height *
+	 * 0.20); TouchAction ts = new TouchAction(BaseClass.getDriver());
+	 * ts.longPress(PointOption.point(x, top_y)).moveTo(PointOption.point(x,
+	 * bottom_y)).release().perform(); } catch (Exception e) { e.printStackTrace();
+	 * System.out.println("Found Exception - swipeToNxtVideoTest"); } }
+	 */
 
 	
 	/*
