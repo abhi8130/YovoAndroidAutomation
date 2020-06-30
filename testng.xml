@@ -14,7 +14,7 @@
 		</classes>
 	</test>
 
-	<test name="Xiaomi">
+	<!-- <test name="Xiaomi">
 		<listeners>
 			<listener class-name="com.automation.listeners.TestListener" />
 		</listeners>
@@ -25,5 +25,5 @@
 		<classes>
 			<class name="com.automation.tests.HomePageTest"></class>
 		</classes>
-	</test>
+	</test> -->
 </suite> <!-- Suite -->

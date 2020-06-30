@@ -19,19 +19,4 @@
       </class> <!-- com.automation.tests.HomePageTest -->
     </classes>
   </test> <!-- Asus max pro m1(failed) -->
-  <test name="Xiaomi(failed)" parallel="tests">
-    <parameter name="port" value="8001"/>
-    <parameter name="platformName" value="Android"/>
-    <parameter name="udid" value="164cd41d9805"/>
-    <parameter name="deviceName" value="Redmi"/>
-    <classes>
-      <class name="com.automation.tests.HomePageTest">
-        <methods>
-          <include name="prepareTest"/>
-          <include name="tearDown"/>
-          <include name="testmethod"/>
-        </methods>
-      </class> <!-- com.automation.tests.HomePageTest -->
-    </classes>
-  </test> <!-- Xiaomi(failed) -->
 </suite> <!-- Failed suite [Suite] -->
