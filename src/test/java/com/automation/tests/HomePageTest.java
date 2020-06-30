@@ -59,9 +59,16 @@ public class HomePageTest extends BaseClass {
 
 	@Parameters({"port", "platformName", "deviceName" })
 	@BeforeMethod
-	public void prepareTest(int port, String platformName, String deviceName)
-			throws AppiumServerHasNotBeenStartedLocallyException, Exception {
-		BaseClass.createInstance(port, platformName, deviceName);
+	public void prepareTest(int port, String platformName, String deviceName) {
+		try {
+			BaseClass.createInstance(port, platformName, deviceName);
+		} catch (AppiumServerHasNotBeenStartedLocallyException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (Exception e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
 		homePage = new HomePage(BaseClass.getDriver());
 		utils = new TestUtil();
 		utils.startRecordingVideo();
