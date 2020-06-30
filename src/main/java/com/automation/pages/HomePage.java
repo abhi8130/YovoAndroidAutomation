@@ -18,7 +18,7 @@ public class HomePage extends BasePOMPage {
 	@AndroidFindBy(xpath = "//*[@class='android.widget.TextView'and @text='Comment']")
 	private AndroidElement commentTxt;
 
-	@AndroidFindBy(xpath = "//*[@class='android.widget.TextView'and @text='Top 80']")
+	@AndroidFindBy(xpath = "//*[@class='android.widget.TextView'and @text='Top 50']")
 	private AndroidElement top50Txt;
 
 	@AndroidFindBy(xpath = "//*[@class='android.widget.TextView'and @text='Share']")
