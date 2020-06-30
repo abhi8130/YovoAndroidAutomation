@@ -124,7 +124,7 @@ public class BaseClass {
 		PageFactory.initElements(new AppiumFieldDecorator(getDriver()), this);
 	}
 
-	public static void createInstance(String udid, int port, String platformName, String deviceName)
+	public static void createInstance(int port, String platformName, String deviceName)
 			throws AppiumServerHasNotBeenStartedLocallyException, Exception {
 
 		AppiumDriver driver = null;
@@ -143,7 +143,7 @@ public class BaseClass {
 		ThreadContext.put("ROUTINGKEY", strFile);
 		utils.log().info("log path: " + strFile);
 
-		capabilities.setCapability(MobileCapabilityType.UDID, udid);
+		//capabilities.setCapability(MobileCapabilityType.UDID, udid);
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, deviceName);
 		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platformName);
 		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");

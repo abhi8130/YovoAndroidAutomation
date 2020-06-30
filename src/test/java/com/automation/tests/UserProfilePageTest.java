@@ -28,9 +28,9 @@ public class UserProfilePageTest extends BaseClass {
 
 	@BeforeClass
 	@Parameters({ "platformName", "url","port","deviceName"})
-	public void setUpUserProfileClass(String udid, int port, String platformName, String deviceName) throws Exception {
+	public void setUpUserProfileClass(int port, String platformName, String deviceName) throws Exception {
 		try {
-			BaseClass.createInstance(udid, port, platformName,deviceName);
+			BaseClass.createInstance(port, platformName,deviceName);
 			userProfilePage = new UserProfilePage(BaseClass.getDriver());
 			homePage = new HomePage(BaseClass.getDriver());
 		} catch (MalformedURLException e) {

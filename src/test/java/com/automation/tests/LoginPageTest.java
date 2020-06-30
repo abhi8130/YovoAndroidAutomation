@@ -38,9 +38,9 @@ public class LoginPageTest extends BaseClass {
 
 	@BeforeClass
 	@Parameters({ "udid", "port", "platformName", "deviceName" })
-	public void setUpLoginPageClass(String udid, int port, String platformName, String deviceName) throws Exception {
+	public void setUpLoginPageClass(int port, String platformName, String deviceName) throws Exception {
 		try {
-			BaseClass.createInstance(udid, port, platformName, deviceName);
+			BaseClass.createInstance(port, platformName, deviceName);
 			loginPage = new LoginPage(BaseClass.getDriver());
 		} catch (MalformedURLException e) {
 			e.printStackTrace();
