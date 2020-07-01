@@ -36,7 +36,6 @@ public class QuizuTest extends BaseClass {
 	@Test(priority = 1)
 	public void testmethod() throws InterruptedException {
 		quizuPage.clickStartBtn();
-		quizuPage.clickfirstBtn();
 		System.out.println("Executed testMethod on Quizu app");
 	}
 	
