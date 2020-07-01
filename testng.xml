@@ -9,7 +9,7 @@
  -->		<parameter name="deviceName" value="Asus" />
 		<parameter name="url" value="http://0.0.0.0:4723/wd/hub" />
 		<classes>
-			<class name="com.automation.tests.HomePageTest"></class>
+			<class name="com.automation.tests.QuizuTest"></class>
 		</classes>
 	</test>
 

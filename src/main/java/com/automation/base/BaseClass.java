@@ -74,7 +74,7 @@ public class BaseClass {
 	private static BaseClass classInstance = null;
 	protected static AppiumDriverLocalService service;
 	public static String mDirpath = System.getProperty("user.dir");
-	public static String mApkfilepath = mDirpath + "/app/Melvin_app_release.apk";
+	public static String mApkfilepath = mDirpath + "/app/quizu.apk";
 	protected static ThreadLocal<AppiumDriver> driver = new ThreadLocal<AppiumDriver>();
 	protected static ThreadLocal<String> platform = new ThreadLocal<String>();
 	protected static ThreadLocal<String> dateTime = new ThreadLocal<String>();
@@ -120,9 +120,10 @@ public class BaseClass {
 		deviceName.set(deviceName2);
 	}
 
-	public BaseClass() {
-		PageFactory.initElements(new AppiumFieldDecorator(getDriver()), this);
-	}
+	/*
+	 * public BaseClass() { PageFactory.initElements(new
+	 * AppiumFieldDecorator(getDriver()), this); }
+	 */
 
 	public static void createInstance(String url, String platformName, String deviceName)
 			throws AppiumServerHasNotBeenStartedLocallyException, Exception {

@@ -5,18 +5,17 @@
     <listener class-name="com.automation.listeners.TestListener"/>
   </listeners>
   <test name="Asus max pro m1(failed)" parallel="tests">
-    <parameter name="port" value="8000"/>
     <parameter name="platformName" value="Android"/>
-    <parameter name="udid" value="J7AAGF009641EL4"/>
-    <parameter name="deviceName" value="Asus    Max Pro m1"/>
+    <parameter name="deviceName" value="Asus"/>
+    <parameter name="url" value="http://0.0.0.0:4723/wd/hub"/>
     <classes>
-      <class name="com.automation.tests.HomePageTest">
+      <class name="com.automation.tests.QuizuTest">
         <methods>
-          <include name="prepareTest"/>
-          <include name="tearDown"/>
           <include name="testmethod"/>
+          <include name="quitDriver"/>
+          <include name="setUpQuizuPageClass"/>
         </methods>
-      </class> <!-- com.automation.tests.HomePageTest -->
+      </class> <!-- com.automation.tests.QuizuTest -->
     </classes>
   </test> <!-- Asus max pro m1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
