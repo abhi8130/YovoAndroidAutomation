@@ -4,7 +4,7 @@ on: [push]
 
 jobs:
   build:
-    name: Build APK and Create release
+    name: Build APK 
     runs-on: macos-latest # the machine type
     strategy: # we are using strategy if we need to run on parallel with different devices and version
       matrix:
@@ -28,16 +28,12 @@ jobs:
         arch: x86_64
         profile: Nexus 6
         script: mvn test # running our test with info to check the results
-        
-  release:
-    name: Release app to internal track
-    runs-on: ubuntu-latest
-    steps:
+
     - name: Release app to internal track
       uses: r0adkll/upload-google-play@v1
       with:
-        serviceAccountJsonPlainText: ${{ secrets.PLAYSTORE_ACCOUNT_KEY }}
-        packageName: com.samnetworks.quizu
-        releaseFile: quizu.apk
-        track: internal
-        whatsNewDirectory: distribution/whatsnew
+            serviceAccountJsonPlainText: ${{ secrets.PLAYSTORE_ACCOUNT_KEY }}
+            packageName: com.samnetworks.quizu
+            releaseFile: quizu.apk
+            track: internal
+            whatsNewDirectory: distribution/whatsnew
