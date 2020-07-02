@@ -16,6 +16,19 @@ jobs:
       uses: actions/setup-java@v1
       with:
         java-version: 1.8
+    - uses: subosito/flutter-action@v1
+      with:
+        flutter-version: '1.17.0'
+    - name: Get version.txt
+      uses: actions/download-artifact@v2
+      with:
+        name: gitversion
+    - name: Read version
+      id: version
+      uses: juliangruber/read-file-action@v1
+      with:
+        path: version.txt 
+        
     - name: Install and Run Appium Server
       run: |
         chmod +x ./scripts/RunAppiumServer.sh # install and run appium server in the background
@@ -29,11 +42,10 @@ jobs:
         profile: Nexus 6
         script: mvn test # running our test with info to check the results
 
-    - name: Release app to internal track
-      uses: r0adkll/upload-google-play@v1
+    - name: Create a Release in GitHub
+      uses: ncipollo/release-action@v1
       with:
-            serviceAccountJsonPlainText: ${{ secrets.PLAYSTORE_ACCOUNT_KEY }}
-            packageName: com.samnetworks.quizu
-            releaseFile: quizu.apk
-            track: internal
-            whatsNewDirectory: distribution/whatsnew
+        artifacts: "build/app/outputs/apk/release/*.apk,build/app/outputs/bundle/release/app-release.aab"
+        token: ${{ secrets.GH_TOKEN }}
+        tag: ${{ steps.version.outputs.content }}
+        commit: ${{ github.sha }}
