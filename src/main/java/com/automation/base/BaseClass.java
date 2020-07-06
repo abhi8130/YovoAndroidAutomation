@@ -150,8 +150,8 @@ public class BaseClass {
 		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
 		capabilities.setCapability(MobileCapabilityType.APP, "app/build/outputs/apk/release/app-release.apk");
 		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 15);
-		capabilities.setCapability("appPackage", ConfigProperties.getDataProperties("androidAppPackage"));
-		capabilities.setCapability("appActivity", ConfigProperties.getDataProperties("androidAppActivity"));
+		//capabilities.setCapability("appPackage", ConfigProperties.getDataProperties("androidAppPackage"));
+		//capabilities.setCapability("appActivity", ConfigProperties.getDataProperties("androidAppActivity"));
 		capabilities.setCapability("autoAcceptAlerts", true);
 		capabilities.setCapability("autoGrantPermissions", true);
 		capabilities.setCapability("skipUnlock", true);
