@@ -33,5 +33,5 @@ jobs:
       with:
         serviceAccountJsonPlainText: ${{ secrets.PLAYSTORE_ACCOUNT_KEY }}
         packageName: com.samnetworks.quizu
-        releaseFile: app/quizu.apk
+        releaseFile: app/quizu_release.apk
         whatsNewDirectory: distribution/whatsnew
