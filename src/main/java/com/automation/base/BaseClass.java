@@ -74,7 +74,7 @@ public class BaseClass {
 	private static BaseClass classInstance = null;
 	protected static AppiumDriverLocalService service;
 	public static String mDirpath = System.getProperty("user.dir");
-	public static String mApkfilepath = mDirpath + "/app/quizu.apk";
+	public static String mApkfilepath = mDirpath + "/app/quizu_release.apk";
 	protected static ThreadLocal<AppiumDriver> driver = new ThreadLocal<AppiumDriver>();
 	protected static ThreadLocal<String> platform = new ThreadLocal<String>();
 	protected static ThreadLocal<String> dateTime = new ThreadLocal<String>();
