@@ -6,8 +6,8 @@
   </listeners>
   <test name="Asus max pro m1(failed)" parallel="tests">
     <parameter name="platformName" value="Android"/>
-    <parameter name="deviceName" value="Asus"/>
-    <parameter name="url" value="http://0.0.0.0:4723/wd/hub"/>
+    <parameter name="deviceName" value="MOTOROLA_MotoG5_Android_8.1.0"/>
+    <parameter name="url" value="https://device.pcloudy.com/appiumcloud/wd/hub"/>
     <classes>
       <class name="com.automation.tests.CICDTest">
         <methods>
