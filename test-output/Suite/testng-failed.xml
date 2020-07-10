@@ -9,13 +9,13 @@
     <parameter name="deviceName" value="Asus"/>
     <parameter name="url" value="http://0.0.0.0:4723/wd/hub"/>
     <classes>
-      <class name="com.automation.tests.QuizuTest">
+      <class name="com.automation.tests.CICDTest">
         <methods>
-          <include name="testmethod"/>
           <include name="quitDriver"/>
           <include name="setUpQuizuPageClass"/>
+          <include name="validateCICDPipeLineTxt"/>
         </methods>
-      </class> <!-- com.automation.tests.QuizuTest -->
+      </class> <!-- com.automation.tests.CICDTest -->
     </classes>
   </test> <!-- Asus max pro m1(failed) -->
 </suite> <!-- Failed suite [Suite] -->

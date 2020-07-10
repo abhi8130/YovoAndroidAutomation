@@ -9,10 +9,10 @@ import io.appium.java_client.pagefactory.AndroidFindBy;
 
 public class CICDPage extends BasePOMPage {
 	
-	@AndroidFindBy(xpath="//*[@classs='android.widget.TextView' and @text='Hello World!']")
+	@AndroidFindBy(xpath = "//*[@class='android.widget.TextView'and @text='Hello World!']")
 	private AndroidElement HelloWorldTxt;
 	
-	@AndroidFindBy(xpath="//*[@classs='android.widget.TextView' and @text='CICDPipeLineCICDPipeLine1']")
+	@AndroidFindBy(xpath = "//*[@class='android.widget.TextView'and @text='CICDPipeLine1']")
 	private AndroidElement CICDPipeLineTxt;
 
 	public CICDPage(AppiumDriver appiumDriver) {
