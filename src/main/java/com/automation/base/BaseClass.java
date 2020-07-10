@@ -74,7 +74,7 @@ public class BaseClass {
 	private static BaseClass classInstance = null;
 	protected static AppiumDriverLocalService service;
 	public static String mDirpath = System.getProperty("user.dir");
-	public static String mApkfilepath = mDirpath + "/app/quizu_release.apk";
+	public static String mApkfilepath = mDirpath + "/app/app-release.apk";
 	protected static ThreadLocal<AppiumDriver> driver = new ThreadLocal<AppiumDriver>();
 	protected static ThreadLocal<String> platform = new ThreadLocal<String>();
 	protected static ThreadLocal<String> dateTime = new ThreadLocal<String>();
@@ -148,10 +148,10 @@ public class BaseClass {
 		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, deviceName);
 		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platformName);
 		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
-		capabilities.setCapability(MobileCapabilityType.APP, "app/build/outputs/apk/release/app-release.apk");
+		capabilities.setCapability(MobileCapabilityType.APP, mApkfilepath);
 		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 15);
-		//capabilities.setCapability("appPackage", ConfigProperties.getDataProperties("androidAppPackage"));
-		//capabilities.setCapability("appActivity", ConfigProperties.getDataProperties("androidAppActivity"));
+		capabilities.setCapability("appPackage", ConfigProperties.getDataProperties("androidAppPackage"));
+		capabilities.setCapability("appActivity", ConfigProperties.getDataProperties("androidAppActivity"));
 		capabilities.setCapability("autoAcceptAlerts", true);
 		capabilities.setCapability("autoGrantPermissions", true);
 		capabilities.setCapability("skipUnlock", true);
