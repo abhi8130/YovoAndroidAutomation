@@ -172,7 +172,7 @@ public class BaseClass {
 		capabilities.setCapability("platformVersion", "8.1.0");
 		capabilities.setCapability("platformName", platformName);
 		capabilities.setCapability("automationName", "uiautomator2");
-		capabilities.setCapability("pCloudy_ApplicationName", "app-release.apk");
+		capabilities.setCapability("pCloudy_ApplicationName", "app-release-unsigned-signed.apk");
 		capabilities.setCapability("appPackage", "com.example.cicdpipeline");
 		capabilities.setCapability("appActivity", "com.example.cicdpipeline.MainActivity");
 		capabilities.setCapability("pCloudy_WildNet", "false");
