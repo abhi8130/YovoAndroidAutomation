@@ -44,7 +44,7 @@ public class CICDTest extends BaseClass {
 	@Test(priority = 2)
 	public void validateCICDPipeLineTxt() throws InterruptedException {
 		String getText = ciCDPage.verifyCICDPipeLineTxt();
-		Assert.assertEquals(getText, "CICDPipeLineCICDPipeLine");
+		Assert.assertEquals(getText, "CICDPipeLine");
 		System.out.println("getText from validateCICDPipeLineTxt() : " + getText);
 	}
 	
