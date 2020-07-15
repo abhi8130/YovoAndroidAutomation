@@ -5,15 +5,15 @@
       <![CDATA[This is the sample screenshot]]>
     </line>
     <line>
-      <![CDATA[<a href='/home/maverick/git/YovoAndroidAutomation/Screenshots/Android_MOTOROLA_MotoG5_Android_8.1.0/2020-07-10-11-12-42/CICDTest/validateCICDPipeLineTxt.png'> <img src='/home/maverick/git/YovoAndroidAutomation/Screenshots/Android_MOTOROLA_MotoG5_Android_8.1.0/2020-07-10-11-12-42/CICDTest/validateCICDPipeLineTxt.png' height='400' width='400'/> </a>]]>
+      <![CDATA[<a href='/home/maverick/git/YovoAndroidAutomation/Screenshots/Android_MOTOROLA_MotoG5_Android_8.1.0/2020-07-15-11-35-31/CICDTest/validateCICDPipeLineTxt.png'> <img src='/home/maverick/git/YovoAndroidAutomation/Screenshots/Android_MOTOROLA_MotoG5_Android_8.1.0/2020-07-15-11-35-31/CICDTest/validateCICDPipeLineTxt.png' height='400' width='400'/> </a>]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="54713" started-at="2020-07-10T05:42:41Z" finished-at="2020-07-10T05:43:36Z">
+  <suite name="Suite" duration-ms="49679" started-at="2020-07-15T06:05:31Z" finished-at="2020-07-15T06:06:21Z">
     <groups>
     </groups>
-    <test name="Asus max pro m1" duration-ms="54713" started-at="2020-07-10T05:42:41Z" finished-at="2020-07-10T05:43:36Z">
+    <test name="Asus max pro m1" duration-ms="49679" started-at="2020-07-15T06:05:31Z" finished-at="2020-07-15T06:06:21Z">
       <class name="com.automation.tests.CICDTest">
-        <test-method status="PASS" signature="setUpQuizuPageClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.tests.CICDTest@579d011c]" name="setUpQuizuPageClass" is-config="true" duration-ms="49380" started-at="2020-07-10T11:12:41Z" finished-at="2020-07-10T11:13:31Z">
+        <test-method status="PASS" signature="setUpQuizuPageClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.tests.CICDTest@7689ddef]" name="setUpQuizuPageClass" is-config="true" duration-ms="43886" started-at="2020-07-15T11:35:31Z" finished-at="2020-07-15T11:36:15Z">
           <params>
             <param index="0">
               <value>
@@ -34,11 +34,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpQuizuPageClass -->
-        <test-method status="PASS" signature="validateHelloWorldTxt()[pri:1, instance:com.automation.tests.CICDTest@579d011c]" name="validateHelloWorldTxt" duration-ms="1303" started-at="2020-07-10T11:13:31Z" finished-at="2020-07-10T11:13:32Z">
+        <test-method status="PASS" signature="validateHelloWorldTxt()[pri:1, instance:com.automation.tests.CICDTest@7689ddef]" name="validateHelloWorldTxt" duration-ms="1466" started-at="2020-07-15T11:36:15Z" finished-at="2020-07-15T11:36:16Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateHelloWorldTxt -->
-        <test-method status="FAIL" signature="validateCICDPipeLineTxt()[pri:2, instance:com.automation.tests.CICDTest@579d011c]" name="validateCICDPipeLineTxt" duration-ms="2611" started-at="2020-07-10T11:13:32Z" finished-at="2020-07-10T11:13:35Z">
+        <test-method status="FAIL" signature="validateCICDPipeLineTxt()[pri:2, instance:com.automation.tests.CICDTest@7689ddef]" name="validateCICDPipeLineTxt" duration-ms="2696" started-at="2020-07-15T11:36:16Z" finished-at="2020-07-15T11:36:19Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //*[@class='android.widget.TextView'and @text='CICDPipeLine1']})]]>
@@ -70,7 +70,7 @@
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@235e4b1b (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@4bfd594c (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:315)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
@@ -104,11 +104,11 @@ Driver info: driver.version: AndroidDriver
               <![CDATA[This is the sample screenshot]]>
             </line>
             <line>
-              <![CDATA[<a href='/home/maverick/git/YovoAndroidAutomation/Screenshots/Android_MOTOROLA_MotoG5_Android_8.1.0/2020-07-10-11-12-42/CICDTest/validateCICDPipeLineTxt.png'> <img src='/home/maverick/git/YovoAndroidAutomation/Screenshots/Android_MOTOROLA_MotoG5_Android_8.1.0/2020-07-10-11-12-42/CICDTest/validateCICDPipeLineTxt.png' height='400' width='400'/> </a>]]>
+              <![CDATA[<a href='/home/maverick/git/YovoAndroidAutomation/Screenshots/Android_MOTOROLA_MotoG5_Android_8.1.0/2020-07-15-11-35-31/CICDTest/validateCICDPipeLineTxt.png'> <img src='/home/maverick/git/YovoAndroidAutomation/Screenshots/Android_MOTOROLA_MotoG5_Android_8.1.0/2020-07-15-11-35-31/CICDTest/validateCICDPipeLineTxt.png' height='400' width='400'/> </a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- validateCICDPipeLineTxt -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.automation.tests.CICDTest@579d011c]" name="quitDriver" is-config="true" duration-ms="411" started-at="2020-07-10T11:13:36Z" finished-at="2020-07-10T11:13:36Z">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.automation.tests.CICDTest@7689ddef]" name="quitDriver" is-config="true" duration-ms="433" started-at="2020-07-15T11:36:20Z" finished-at="2020-07-15T11:36:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
