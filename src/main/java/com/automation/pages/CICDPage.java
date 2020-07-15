@@ -12,7 +12,7 @@ public class CICDPage extends BasePOMPage {
 	@AndroidFindBy(xpath = "//*[@class='android.widget.TextView'and @text='Hello World!']")
 	private AndroidElement HelloWorldTxt;
 	
-	@AndroidFindBy(xpath = "//*[@class='android.widget.TextView'and @text='CICDPipeLine1']")
+	@AndroidFindBy(xpath = "//*[@class='android.widget.TextView'and @text='CICDPipeLine']")
 	private AndroidElement CICDPipeLineTxt;
 
 	public CICDPage(AppiumDriver appiumDriver) {
