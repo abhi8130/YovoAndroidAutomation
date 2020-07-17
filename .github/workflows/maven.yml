@@ -26,7 +26,7 @@ jobs:
         target: ${{ matrix.target }}
         arch: x86_64
         profile: Nexus 6
-        script: ./testng.xml # running our test with info to check the results
+        script: chmod +x ./scripts/runTestng.sh # running our test with info to check the results
       
     - name: Release app to internal track
       uses: r0adkll/upload-google-play@v1
