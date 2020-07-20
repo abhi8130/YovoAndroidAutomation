@@ -144,36 +144,40 @@ public class BaseClass {
 		ThreadContext.put("ROUTINGKEY", strFile);
 		utils.log().info("log path: " + strFile);
 
-		// capabilities.setCapability(MobileCapabilityType.UDID, udid);
-		capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, deviceName);
-		capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platformName);
-		capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME, "uiautomator2");
-		capabilities.setCapability(MobileCapabilityType.APP, mApkfilepath);
-		capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 15);
-		capabilities.setCapability("appPackage", ConfigProperties.getDataProperties("androidAppPackage"));
-		capabilities.setCapability("appActivity", ConfigProperties.getDataProperties("androidAppActivity"));
-		capabilities.setCapability("autoAcceptAlerts", true);
-		capabilities.setCapability("autoGrantPermissions", true);
-		capabilities.setCapability("skipUnlock", true); 
-		capabilities.setCapability("noReset", true); 
-		capabilities.setCapability("fullReset", false);
-
 		/*
-		 * capabilities.setCapability("pCloudy_Username", "abhishek@totalitycorp.com");
-		 * capabilities.setCapability("pCloudy_ApiKey", "djqfdcg5g36qbtj2pz93tsd2");
-		 * capabilities.setCapability("pCloudy_DurationInMinutes", 10);
-		 * capabilities.setCapability("newCommandTimeout", 600);
-		 * capabilities.setCapability("launchTimeout", 90000);
-		 * capabilities.setCapability("pCloudy_DeviceFullName", deviceName);
-		 * capabilities.setCapability("platformVersion", "8.1.0");
-		 * capabilities.setCapability("platformName", platformName);
-		 * capabilities.setCapability("automationName", "uiautomator2");
-		 * capabilities.setCapability("pCloudy_ApplicationName",
-		 * "app-release-unsigned-signed.apk"); capabilities.setCapability("appPackage",
-		 * "com.cicdpipeline"); capabilities.setCapability("appActivity",
-		 * "com.example.cicdpipeline.MainActivity");
-		 * capabilities.setCapability("pCloudy_WildNet", "false");
+		 * // capabilities.setCapability(MobileCapabilityType.UDID, udid);
+		 * capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, deviceName);
+		 * capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, platformName);
+		 * capabilities.setCapability(MobileCapabilityType.AUTOMATION_NAME,
+		 * "uiautomator2"); capabilities.setCapability(MobileCapabilityType.APP,
+		 * mApkfilepath);
+		 * capabilities.setCapability(MobileCapabilityType.NEW_COMMAND_TIMEOUT, 15);
+		 * capabilities.setCapability("appPackage",
+		 * ConfigProperties.getDataProperties("androidAppPackage"));
+		 * capabilities.setCapability("appActivity",
+		 * ConfigProperties.getDataProperties("androidAppActivity"));
+		 * capabilities.setCapability("autoAcceptAlerts", true);
+		 * capabilities.setCapability("autoGrantPermissions", true);
+		 * capabilities.setCapability("skipUnlock", true);
+		 * capabilities.setCapability("noReset", true);
+		 * capabilities.setCapability("fullReset", false);
 		 */
+		
+		  capabilities.setCapability("pCloudy_Username", "abhishek@totalitycorp.com");
+		  capabilities.setCapability("pCloudy_ApiKey", "djqfdcg5g36qbtj2pz93tsd2");
+		  capabilities.setCapability("pCloudy_DurationInMinutes", 10);
+		  capabilities.setCapability("newCommandTimeout", 600);
+		  capabilities.setCapability("launchTimeout", 90000);
+		  capabilities.setCapability("pCloudy_DeviceFullName", deviceName);
+		  capabilities.setCapability("platformVersion", "8.1.0");
+		  capabilities.setCapability("platformName", platformName);
+		  capabilities.setCapability("automationName", "uiautomator2");
+		  capabilities.setCapability("pCloudy_ApplicationName",
+		  "app-release-unsigned-signed.apk"); capabilities.setCapability("appPackage",
+		  "com.cicdpipeline"); capabilities.setCapability("appActivity",
+		  "com.example.cicdpipeline.MainActivity");
+		  capabilities.setCapability("pCloudy_WildNet", "false");
+		 
 		try {
 			// driver = new AndroidDriver(new URL(url), capabilities);
 			driver = new AndroidDriver<WebElement>(new URL(url), capabilities);
