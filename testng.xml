@@ -9,13 +9,11 @@
 	<test name="Asus max pro m1">
 		<listeners>
 			<listener class-name="com.automation.listeners.TestListener" />
-			<listener
-				class-name="com.automation.listeners.AnnotationTransformer" />
+			<listener class-name="com.automation.listeners.AnnotationTransformer" />
 		</listeners>
 		<parameter name="platformName" value="Android" />
-		<parameter name="udid" value="J7AAGF009641EL4" />
 		<parameter name="deviceName"
-			value="MOTOROLA_MotoG5_Android_8.1.0" />
+			value="SAMSUNG_GalaxyGrandPrime_Android_5.0.2" />
 		<parameter name="url"
 			value="https://device.pcloudy.com/appiumcloud/wd/hub" />
 		<classes>

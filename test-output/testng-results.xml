@@ -5,19 +5,19 @@
       <![CDATA[This is the sample screenshot]]>
     </line>
     <line>
-      <![CDATA[<a href='/home/maverick/git/YovoAndroidAutomation/Screenshots/Android_Redmi/2020-07-17-19-44-45/CICDTest/validateCICDPipeLineTxt.png'> <img src='/home/maverick/git/YovoAndroidAutomation/Screenshots/Android_Redmi/2020-07-17-19-44-45/CICDTest/validateCICDPipeLineTxt.png' height='400' width='400'/> </a>]]>
+      <![CDATA[<a href='/home/maverick/git/YovoAndroidAutomation/Screenshots/Android_SAMSUNG_GalaxyGrandPrime_Android_5.0.2/2020-07-20-16-24-57/CICDTest/validateCICDPipeLineTxt.png'> <img src='/home/maverick/git/YovoAndroidAutomation/Screenshots/Android_SAMSUNG_GalaxyGrandPrime_Android_5.0.2/2020-07-20-16-24-57/CICDTest/validateCICDPipeLineTxt.png' height='400' width='400'/> </a>]]>
     </line>
   </reporter-output>
-  <suite name="Suite" duration-ms="21741" started-at="2020-07-17T14:14:45Z" finished-at="2020-07-17T14:15:07Z">
+  <suite name="Suite" duration-ms="80008" started-at="2020-07-20T10:54:57Z" finished-at="2020-07-20T10:56:17Z">
     <groups>
     </groups>
-    <test name="Xiaomi" duration-ms="21741" started-at="2020-07-17T14:14:45Z" finished-at="2020-07-17T14:15:07Z">
+    <test name="Asus max pro m1" duration-ms="80008" started-at="2020-07-20T10:54:57Z" finished-at="2020-07-20T10:56:17Z">
       <class name="com.automation.tests.CICDTest">
-        <test-method status="PASS" signature="setUpCICDPageClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.tests.CICDTest@687a762c]" name="setUpCICDPageClass" is-config="true" duration-ms="11016" started-at="2020-07-17T19:44:45Z" finished-at="2020-07-17T19:44:56Z">
+        <test-method status="PASS" signature="setUpCICDPageClass(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.automation.tests.CICDTest@3546d80f]" name="setUpCICDPageClass" is-config="true" duration-ms="69393" started-at="2020-07-20T16:24:57Z" finished-at="2020-07-20T16:26:06Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[http://0.0.0.0:4723/wd/hub]]>
+                <![CDATA[https://device.pcloudy.com/appiumcloud/wd/hub]]>
               </value>
             </param>
             <param index="1">
@@ -27,18 +27,18 @@
             </param>
             <param index="2">
               <value>
-                <![CDATA[Redmi]]>
+                <![CDATA[SAMSUNG_GalaxyGrandPrime_Android_5.0.2]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpCICDPageClass -->
-        <test-method status="PASS" signature="validateHelloWorldTxt()[pri:1, instance:com.automation.tests.CICDTest@687a762c]" name="validateHelloWorldTxt" duration-ms="679" started-at="2020-07-17T19:44:56Z" finished-at="2020-07-17T19:44:57Z">
+        <test-method status="PASS" signature="validateHelloWorldTxt()[pri:1, instance:com.automation.tests.CICDTest@3546d80f]" name="validateHelloWorldTxt" duration-ms="1278" started-at="2020-07-20T16:26:06Z" finished-at="2020-07-20T16:26:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateHelloWorldTxt -->
-        <test-method status="SKIP" signature="validateCICDPipeLineTxt()[pri:2, instance:com.automation.tests.CICDTest@687a762c]" name="validateCICDPipeLineTxt" duration-ms="2067" started-at="2020-07-17T19:44:57Z" finished-at="2020-07-17T19:44:59Z">
+        <test-method status="SKIP" signature="validateCICDPipeLineTxt()[pri:2, instance:com.automation.tests.CICDTest@3546d80f]" name="validateCICDPipeLineTxt" duration-ms="2559" started-at="2020-07-20T16:26:07Z" finished-at="2020-07-20T16:26:10Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //*[@class='android.widget.TextView'and @text='CICDPipeLine1']})]]>
@@ -70,7 +70,7 @@
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@fe99cdf (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5542a500 (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:315)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
@@ -102,7 +102,7 @@ Driver info: driver.version: AndroidDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCICDPipeLineTxt -->
-        <test-method status="SKIP" signature="validateCICDPipeLineTxt()[pri:2, instance:com.automation.tests.CICDTest@687a762c]" name="validateCICDPipeLineTxt" duration-ms="2380" started-at="2020-07-17T19:44:59Z" finished-at="2020-07-17T19:45:01Z">
+        <test-method status="SKIP" signature="validateCICDPipeLineTxt()[pri:2, instance:com.automation.tests.CICDTest@3546d80f]" name="validateCICDPipeLineTxt" duration-ms="1341" started-at="2020-07-20T16:26:10Z" finished-at="2020-07-20T16:26:11Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //*[@class='android.widget.TextView'and @text='CICDPipeLine1']})]]>
@@ -134,7 +134,7 @@ Driver info: driver.version: AndroidDriver
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@7c0f5f4e (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@248e370a (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:315)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
@@ -166,7 +166,7 @@ Driver info: driver.version: AndroidDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCICDPipeLineTxt -->
-        <test-method status="SKIP" signature="validateCICDPipeLineTxt()[pri:2, instance:com.automation.tests.CICDTest@687a762c]" name="validateCICDPipeLineTxt" duration-ms="2211" started-at="2020-07-17T19:45:01Z" finished-at="2020-07-17T19:45:04Z">
+        <test-method status="SKIP" signature="validateCICDPipeLineTxt()[pri:2, instance:com.automation.tests.CICDTest@3546d80f]" name="validateCICDPipeLineTxt" duration-ms="1392" started-at="2020-07-20T16:26:11Z" finished-at="2020-07-20T16:26:13Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //*[@class='android.widget.TextView'and @text='CICDPipeLine1']})]]>
@@ -198,7 +198,7 @@ Driver info: driver.version: AndroidDriver
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@77b6776c (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@7c66ad02 (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:315)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
@@ -230,7 +230,7 @@ Driver info: driver.version: AndroidDriver
           <reporter-output>
           </reporter-output>
         </test-method> <!-- validateCICDPipeLineTxt -->
-        <test-method status="FAIL" signature="validateCICDPipeLineTxt()[pri:2, instance:com.automation.tests.CICDTest@687a762c]" name="validateCICDPipeLineTxt" duration-ms="1995" started-at="2020-07-17T19:45:04Z" finished-at="2020-07-17T19:45:06Z">
+        <test-method status="FAIL" signature="validateCICDPipeLineTxt()[pri:2, instance:com.automation.tests.CICDTest@3546d80f]" name="validateCICDPipeLineTxt" duration-ms="1539" started-at="2020-07-20T16:26:13Z" finished-at="2020-07-20T16:26:14Z">
           <exception class="org.openqa.selenium.NoSuchElementException">
             <message>
               <![CDATA[Can't locate an element by this strategy: By.chained({By.xpath: //*[@class='android.widget.TextView'and @text='CICDPipeLine1']})]]>
@@ -262,7 +262,7 @@ Driver info: driver.version: AndroidDriver
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@468028db (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@508a6f18 (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:315)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
@@ -296,15 +296,15 @@ Driver info: driver.version: AndroidDriver
               <![CDATA[This is the sample screenshot]]>
             </line>
             <line>
-              <![CDATA[<a href='/home/maverick/git/YovoAndroidAutomation/Screenshots/Android_Redmi/2020-07-17-19-44-45/CICDTest/validateCICDPipeLineTxt.png'> <img src='/home/maverick/git/YovoAndroidAutomation/Screenshots/Android_Redmi/2020-07-17-19-44-45/CICDTest/validateCICDPipeLineTxt.png' height='400' width='400'/> </a>]]>
+              <![CDATA[<a href='/home/maverick/git/YovoAndroidAutomation/Screenshots/Android_SAMSUNG_GalaxyGrandPrime_Android_5.0.2/2020-07-20-16-24-57/CICDTest/validateCICDPipeLineTxt.png'> <img src='/home/maverick/git/YovoAndroidAutomation/Screenshots/Android_SAMSUNG_GalaxyGrandPrime_Android_5.0.2/2020-07-20-16-24-57/CICDTest/validateCICDPipeLineTxt.png' height='400' width='400'/> </a>]]>
             </line>
           </reporter-output>
         </test-method> <!-- validateCICDPipeLineTxt -->
-        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.automation.tests.CICDTest@687a762c]" name="quitDriver" is-config="true" duration-ms="260" started-at="2020-07-17T19:45:06Z" finished-at="2020-07-17T19:45:07Z">
+        <test-method status="PASS" signature="quitDriver()[pri:0, instance:com.automation.tests.CICDTest@3546d80f]" name="quitDriver" is-config="true" duration-ms="1576" started-at="2020-07-20T16:26:15Z" finished-at="2020-07-20T16:26:17Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- quitDriver -->
       </class> <!-- com.automation.tests.CICDTest -->
-    </test> <!-- Xiaomi -->
+    </test> <!-- Asus max pro m1 -->
   </suite> <!-- Suite -->
 </testng-results>

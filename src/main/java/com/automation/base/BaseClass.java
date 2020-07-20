@@ -163,13 +163,13 @@ public class BaseClass {
 		 * capabilities.setCapability("fullReset", false);
 		 */
 		
-		  capabilities.setCapability("pCloudy_Username", "abhishek@totalitycorp.com");
-		  capabilities.setCapability("pCloudy_ApiKey", "djqfdcg5g36qbtj2pz93tsd2");
+		  capabilities.setCapability("pCloudy_Username", "abhi.c8527@gmail.com");
+		  capabilities.setCapability("pCloudy_ApiKey", "3gx5c23kmf8h5p6xnpfkrgdd");
 		  capabilities.setCapability("pCloudy_DurationInMinutes", 10);
 		  capabilities.setCapability("newCommandTimeout", 600);
 		  capabilities.setCapability("launchTimeout", 90000);
 		  capabilities.setCapability("pCloudy_DeviceFullName", deviceName);
-		  capabilities.setCapability("platformVersion", "8.1.0");
+		  capabilities.setCapability("platformVersion", "9.0.0");
 		  capabilities.setCapability("platformName", platformName);
 		  capabilities.setCapability("automationName", "uiautomator2");
 		  capabilities.setCapability("pCloudy_ApplicationName",

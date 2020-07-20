@@ -176,7 +176,7 @@
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@468028db (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@508a6f18 (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:315)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
@@ -229,7 +229,7 @@ Driver info: driver.version: AndroidDriver
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@77b6776c (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@5542a500 (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:315)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
@@ -274,7 +274,7 @@ Driver info: driver.version: AndroidDriver
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@7c0f5f4e (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@7c66ad02 (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:315)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
@@ -319,7 +319,7 @@ Driver info: driver.version: AndroidDriver
 	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
 	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
 	at java.lang.Thread.run(Thread.java:748)
-Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@fe99cdf (tried for 1 second(s) with 500 milliseconds interval)
+Caused by: org.openqa.selenium.TimeoutException: Expected condition failed: waiting for io.appium.java_client.pagefactory.AppiumElementLocator$WaitingFunction@248e370a (tried for 1 second(s) with 500 milliseconds interval)
 	at org.openqa.selenium.support.ui.FluentWait.timeoutException(FluentWait.java:315)
 	at org.openqa.selenium.support.ui.FluentWait.until(FluentWait.java:283)
 	at io.appium.java_client.pagefactory.AppiumElementLocator.waitFor(AppiumElementLocator.java:99)
@@ -380,14 +380,14 @@ Driver info: driver.version: AndroidDriver
     &lt;listener class-name=&quot;com.automation.listeners.TestListener&quot;/&gt;
     &lt;listener class-name=&quot;com.automation.listeners.AnnotationTransformer&quot;/&gt;
   &lt;/listeners&gt;
-  &lt;test name=&quot;Xiaomi&quot;&gt;
+  &lt;test name=&quot;Asus max pro m1&quot;&gt;
     &lt;parameter name=&quot;platformName&quot; value=&quot;Android&quot;/&gt;
-    &lt;parameter name=&quot;deviceName&quot; value=&quot;Redmi&quot;/&gt;
-    &lt;parameter name=&quot;url&quot; value=&quot;http://0.0.0.0:4723/wd/hub&quot;/&gt;
+    &lt;parameter name=&quot;deviceName&quot; value=&quot;SAMSUNG_GalaxyGrandPrime_Android_5.0.2&quot;/&gt;
+    &lt;parameter name=&quot;url&quot; value=&quot;https://device.pcloudy.com/appiumcloud/wd/hub&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.automation.tests.CICDTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- Xiaomi --&gt;
+  &lt;/test&gt; &lt;!-- Asus max pro m1 --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -399,7 +399,7 @@ Driver info: driver.version: AndroidDriver
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Xiaomi (1 class)</span>
+                <span class="test-name">Asus max pro m1 (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -429,28 +429,28 @@ data.addRows(5);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'validateCICDPipeLineTxt')
 data.setCell(0, 2, 'com.automation.tests.CICDTest')
-data.setCell(0, 3, 2380);
+data.setCell(0, 3, 2559);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'validateCICDPipeLineTxt')
 data.setCell(1, 2, 'com.automation.tests.CICDTest')
-data.setCell(1, 3, 2211);
+data.setCell(1, 3, 1539);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'validateCICDPipeLineTxt')
 data.setCell(2, 2, 'com.automation.tests.CICDTest')
-data.setCell(2, 3, 2067);
+data.setCell(2, 3, 1392);
 data.setCell(3, 0, 3)
 data.setCell(3, 1, 'validateCICDPipeLineTxt')
 data.setCell(3, 2, 'com.automation.tests.CICDTest')
-data.setCell(3, 3, 1995);
+data.setCell(3, 3, 1341);
 data.setCell(4, 0, 4)
 data.setCell(4, 1, 'validateHelloWorldTxt')
 data.setCell(4, 2, 'com.automation.tests.CICDTest')
-data.setCell(4, 3, 679);
+data.setCell(4, 3, 1278);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 9 seconds</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -465,7 +465,7 @@ return data;
               <span class="reporter-method-name">validateCICDPipeLineTxt</span>
               <div class="reporter-method-output-div">
                 <span class="reporter-method-output">This is the sample screenshot</span>
-                <span class="reporter-method-output"><a href='/home/maverick/git/YovoAndroidAutomation/Screenshots/Android_Redmi/2020-07-17-19-44-45/CICDTest/validateCICDPipeLineTxt.png'> <img src='/home/maverick/git/YovoAndroidAutomation/Screenshots/Android_Redmi/2020-07-17-19-44-45/CICDTest/validateCICDPipeLineTxt.png' height='400' width='400'/> </a></span>
+                <span class="reporter-method-output"><a href='/home/maverick/git/YovoAndroidAutomation/Screenshots/Android_SAMSUNG_GalaxyGrandPrime_Android_5.0.2/2020-07-20-16-24-57/CICDTest/validateCICDPipeLineTxt.png'> <img src='/home/maverick/git/YovoAndroidAutomation/Screenshots/Android_SAMSUNG_GalaxyGrandPrime_Android_5.0.2/2020-07-20-16-24-57/CICDTest/validateCICDPipeLineTxt.png' height='400' width='400'/> </a></span>
               </div> <!-- reporter-method-output-div -->
             </div> <!-- reporter-method-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -485,34 +485,34 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.automation.tests.CICDTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUpCICDPageClass(http://0.0.0.0:4723/wd/hub, Android, Redmi)</span>
+                <span class="method-name">setUpCICDPageClass(https://device.pcloudy.com/appiumcloud/wd/hub, Android, SAMSUNG_GalaxyGrandPrime_Android_5.0.2)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">validateHelloWorldTxt</span>
-                <span class="method-start">11034 ms</span>
+                <span class="method-start">69411 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateCICDPipeLineTxt</span>
-                <span class="method-start">11898 ms</span>
+                <span class="method-start">70833 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateCICDPipeLineTxt</span>
-                <span class="method-start">13988 ms</span>
+                <span class="method-start">73409 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">validateCICDPipeLineTxt</span>
-                <span class="method-start">16381 ms</span>
+                <span class="method-start">74761 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">validateCICDPipeLineTxt</span>
-                <span class="method-start">18608 ms</span>
+                <span class="method-start">76157 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-class after">
                 <span class="method-name">quitDriver</span>
-                <span class="method-start">21457 ms</span>
+                <span class="method-start">78405 ms</span>
               </div> <!-- configuration-class after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
