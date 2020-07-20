@@ -5,10 +5,10 @@
     <listener class-name="com.automation.listeners.TestListener"/>
     <listener class-name="com.automation.listeners.AnnotationTransformer"/>
   </listeners>
-  <test name="Xiaomi(failed)" parallel="tests">
+  <test name="Asus max pro m1(failed)" parallel="tests">
     <parameter name="platformName" value="Android"/>
-    <parameter name="deviceName" value="Redmi"/>
-    <parameter name="url" value="http://0.0.0.0:4723/wd/hub"/>
+    <parameter name="deviceName" value="SAMSUNG_GalaxyGrandPrime_Android_5.0.2"/>
+    <parameter name="url" value="https://device.pcloudy.com/appiumcloud/wd/hub"/>
     <classes>
       <class name="com.automation.tests.CICDTest">
         <methods>
@@ -18,5 +18,5 @@
         </methods>
       </class> <!-- com.automation.tests.CICDTest -->
     </classes>
-  </test> <!-- Xiaomi(failed) -->
+  </test> <!-- Asus max pro m1(failed) -->
 </suite> <!-- Failed suite [Suite] -->
