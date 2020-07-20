@@ -1,0 +1,1 @@
+11:Android:Redmi:com.automation.tests.HomePageTest:---Enter testmethod---

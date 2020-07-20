@@ -25,7 +25,7 @@ public class CICDTest extends BaseClass {
 	@BeforeClass
 	//@Parameters({ "udid", "port", "platformName", "deviceName" })
 	@Parameters({ "url", "platformName", "deviceName" })
-	public void setUpQuizuPageClass(String url, String platformName, String deviceName) throws Exception {
+	public void setUpCICDPageClass(String url, String platformName, String deviceName) throws Exception {
 		try {
 			BaseClass.createInstance(url, platformName, deviceName);
 			ciCDPage = new CICDPage(BaseClass.getDriver());

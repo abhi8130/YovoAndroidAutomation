@@ -1,7 +1,5 @@
 package com.automation.listeners;
 
-import javax.management.loading.PrivateClassLoader;
-
 import org.testng.IRetryAnalyzer;
 import org.testng.ITestResult;
 
@@ -12,7 +10,7 @@ public class RetryAnalyzer implements IRetryAnalyzer {
 		int retryCount = 0;
 		int maxRetryLimit = 3;
 
-		if (retryCount <= 3) {
+		if (retryCount <= maxRetryLimit) {
 			System.out.println("Failed testcase: " + result.getName() + "with status "
 					+ getResultStatusName(result.getStatus()) + "for the " + (retryCount + 1) + "time(s)");
 			retryCount++;

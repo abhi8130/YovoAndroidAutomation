@@ -3,19 +3,20 @@
 <suite name="Failed suite [Suite]" parallel="tests">
   <listeners>
     <listener class-name="com.automation.listeners.TestListener"/>
+    <listener class-name="com.automation.listeners.AnnotationTransformer"/>
   </listeners>
-  <test name="Asus max pro m1(failed)" parallel="tests">
+  <test name="Xiaomi(failed)" parallel="tests">
     <parameter name="platformName" value="Android"/>
-    <parameter name="deviceName" value="MOTOROLA_MotoG5_Android_8.1.0"/>
-    <parameter name="url" value="https://device.pcloudy.com/appiumcloud/wd/hub"/>
+    <parameter name="deviceName" value="Redmi"/>
+    <parameter name="url" value="http://0.0.0.0:4723/wd/hub"/>
     <classes>
       <class name="com.automation.tests.CICDTest">
         <methods>
           <include name="quitDriver"/>
-          <include name="setUpQuizuPageClass"/>
+          <include name="setUpCICDPageClass"/>
           <include name="validateCICDPipeLineTxt"/>
         </methods>
       </class> <!-- com.automation.tests.CICDTest -->
     </classes>
-  </test> <!-- Asus max pro m1(failed) -->
+  </test> <!-- Xiaomi(failed) -->
 </suite> <!-- Failed suite [Suite] -->
