@@ -17,8 +17,6 @@ import ro.altom.altunitytester.AltUnityObject;
 public class CICDTest extends BaseClass {
 
 	CICDPage ciCDPage;
-	AltUnityDriver altdriver = new AltUnityDriver();
-
 	
 	public CICDTest() {
 		super();
