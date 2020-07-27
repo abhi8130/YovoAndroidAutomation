@@ -193,6 +193,11 @@
 			<version>1.5.3</version>
 		</dependency>
 
+		<dependency>
+			<groupId>com.altom</groupId>
+			<artifactId>altunitytester-java-client</artifactId>
+			<version>1.5.6.1</version>
+		</dependency>
 
 	</dependencies>
 </project>

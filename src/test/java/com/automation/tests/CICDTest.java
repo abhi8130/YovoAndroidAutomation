@@ -2,21 +2,23 @@ package com.automation.tests;
 
 import java.net.MalformedURLException;
 import java.util.concurrent.TimeUnit;
-
 import org.testng.Assert;
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
-
 import com.automation.base.BaseClass;
 import com.automation.pages.CICDPage;
 import com.automation.pages.LoginPage;
 import com.automation.pages.QuizuPage;
+import ro.altom.altunitytester.AltUnityDriver;
+import ro.altom.altunitytester.AltUnityObject;
 
 public class CICDTest extends BaseClass {
 
 	CICDPage ciCDPage;
+	AltUnityDriver altdriver = new AltUnityDriver();
+
 	
 	public CICDTest() {
 		super();
